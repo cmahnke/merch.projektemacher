@@ -1,0 +1,12 @@
+#[submodule "themes/hugo-coder"]
+#	path = themes/hugo-coder
+#	url = https://github.com/luizdepra/hugo-coder.git
+#[submodule "themes/projektemacher-base"]
+#	path = themes/projektemacher-base
+#	url = https://github.com/cmahnke/projektemacher-base.git
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "themes/projektemacher-base"]
+	path = themes/projektemacher-base
+	url = https://github.com/cmahnke/projektemacher-base.git
