@@ -14,7 +14,6 @@ resources:
   params:
     preview: true
 ---
-
 This book by Ulrich Bäumer warns against the dangers of "occult" rock music. All in all it is an amusing [evangelical](https://en.wikipedia.org/wiki/Evangelicalism) work of art in parts.
 
 Much of what you can read there seems familiar as an urban legend if you already lived in the 80s or early 90s. One of the few testimonies of the ["Satanic Panic"](https://en.wikipedia.org/wiki/Satanic_panic) that made it to Germany in book form.

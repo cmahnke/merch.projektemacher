@@ -8,5 +8,4 @@ resources:
   params:
     preview: true
 ---
-
 A warning sign that combines the WiFi symbol and the [all-seeing eye](https://en.wikipedia.org/wiki/Eye_of_Providence). In the unlikely event that the hotspots are tracking you....

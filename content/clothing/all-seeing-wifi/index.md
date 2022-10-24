@@ -8,3 +8,4 @@ resources:
   params:
     preview: true
 ---
+Ein Warnzeichen, dass das WiFi Symbol und das [allsehende Auge](https://de.wikipedia.org/wiki/Auge_der_Vorsehung) kombiniert. Für den unwahrscheinlichen Fall, dass die Hotspots einen verfolgen...

@@ -18,16 +18,17 @@
             <div class="content-text">
                 {{ .Content }}
             </div>
-            {{ partial "product-preview.html" (dict "context" . "pageContext" $page "contextPath" $context "width" 350) }}
-
-            {{- range .Params.resources -}}
-                {{- if .params.iiif -}}
-                    <div class="iiif">
-                        {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
-                    </div>
-                {{- end -}}
-            {{- end -}}
+            {{ if ne .Kind "section" }}
+                {{ partial "product-preview.html" (dict "context" . "pageContext" $page "width" 350) }}
+            {{ end }}
         </div>
+        {{- range .Params.resources -}}
+            {{- if .params.iiif -}}
+                <div class="iiif">
+                    {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
+                </div>
+            {{- end -}}
+        {{- end -}}
       </article>
     </section>
 </div>

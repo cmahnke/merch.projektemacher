@@ -91,7 +91,7 @@ nav {
     /* height: calc(100vh - 6.0rem); */
     margin-bottom: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
 
     &.error404,
     &.home {
@@ -121,11 +121,10 @@ nav {
 
     .product-preview {
         min-width: fit-content;
-    }
-
-    .iiif {
-      width: 100%;
-      flex-basis: 100%;
+        display: flex;
+        img {
+          margin: 0 3em;
+        }
     }
 
 }

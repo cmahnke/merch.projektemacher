@@ -1,11 +1,12 @@
-{{- $contextPath := .contextPath -}}
 {{- $width := .width -}}
 {{- $page := .pageContext }}
+{{- $contextPath := $page.File.Path -}}
+{{- $context := .context -}}
 <div class="product-preview">
     {{- $previewImg := ($page.Resources.GetMatch "product") -}}
     {{- $imgLocation := path.Join $contextPath ($page.Resources.GetMatch "product") -}}
     {{- if eq $previewImg nil -}}
-        {{ errorf "Can't find image %s" $imgLocation }}
+        {{ errorf "Can't find image %s: %#v" $imgLocation $previewImg }}
     {{- end -}}
 
     {{ $image := $previewImg.Resize (printf "%dx" $width) }}
