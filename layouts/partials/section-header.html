@@ -1,9 +1,9 @@
 <ul class="categories">
   {{ range .Site.Sections }}
       {{ if eq . .CurrentSection }}
-          <li class="march-category active">
+          <li class="merch-category active">
       {{ else }}
-          <li class="march-category">
+          <li class="merch-category">
       {{ end }}
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </li>

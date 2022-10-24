@@ -1,11 +1,33 @@
+{{- $page := .Page -}}
+{{- $context := path.Dir .File.Path -}}
+{{- $pageURL := .Permalink -}}
 <div class="content page">
     <section class="container page {{ .Page.Params.slug }}">
+      {{ partial "section-header.html" . }}
       <article>
         <header>
           <h1 class="header">{{ .Title }}</h1>
         </header>
-        {{ partial "section-header.html" . }}
-        {{ .Content }}
+        <div class="entry-meta">
+            {{- if not .Params.metaPage -}}
+            <span class="date">{{ partial "date.html" . }}</span>
+            {{- end -}}
+        </div>
+
+        <div class="content">
+            <div class="content-text">
+                {{ .Content }}
+            </div>
+            {{ partial "product-preview.html" (dict "context" . "pageContext" $page "contextPath" $context "width" 350) }}
+
+            {{- range .Params.resources -}}
+                {{- if .params.iiif -}}
+                    <div class="iiif">
+                        {{ partial "iiif/iiif-image.html" (dict "context" . "contextPath" $context "pageURL" .Permalink "pageContext" $page "site" $.Site) }}
+                    </div>
+                {{- end -}}
+            {{- end -}}
+        </div>
       </article>
     </section>
 </div>

@@ -1,7 +1,9 @@
 {{/* TODO: Remove this - the layout should be enough */}}
 <div class="content list">
     <section class="container list">
+      {{ partial "section-header.html" . }}
       <article class="posts">
+
       <header>
           <h1 class="title header">
             {{- if eq .Kind "term" -}}
@@ -15,7 +17,6 @@
             {{ end }}
           </h1>
       </header>
-      {{ partial "section-header.html" . }}
       <div class="post-list-content">
         {{ .Content }}
       </div>
@@ -79,20 +80,19 @@
                 {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
             </span>
             <span class="link">
-                <a class="title" href="{{ .RelPermalink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ .Title -}}</a>
+                <a class="title" href="{{ .RelPermalink }}">{{- $displayName }}{{ .Title -}}</a>
             </span>
           </div>
           <div class="post-snippet">
+            {{- $page := .Page -}}
+            {{- $context := path.Dir .File.Path -}}
+            {{ partial "product-preview.html" (dict "context" . "pageContext" $page "contextPath" $context "width" 150) }}
             {{ if ne .Description ""}}
               <span class="description">{{- .Description | markdownify -}}</span>
             {{ else }}
                 <span class="post-spacer">&nbsp;</span>
             {{ end }}
-            {{ if not $openExternal }}
-              <div class="post-content collapse collapsed" id="{{ $id }}">
-                {{ .Content }}
-              </div>
-            {{ end }}
+
           </div>
         </li>
         {{ end }}

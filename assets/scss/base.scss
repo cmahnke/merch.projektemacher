@@ -22,6 +22,7 @@ $nav-color: #293133 !default;
 @import "base";
 @import "content";
 @import "navigation";
+@import "ol-iiif";
 @import "icons";
 /**
  * Fontawesome SVGs - taken fom https://github.com/FortAwesome/Font-Awesome
@@ -89,6 +90,8 @@ nav {
 .content {
     /* height: calc(100vh - 6.0rem); */
     margin-bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
 
     &.error404,
     &.home {
@@ -111,6 +114,20 @@ nav {
         margin-top: 10em;
         flex-wrap: wrap;
     }
+
+    .content-text {
+        width: 100%;
+    }
+
+    .product-preview {
+        min-width: fit-content;
+    }
+
+    .iiif {
+      width: 100%;
+      flex-basis: 100%;
+    }
+
 }
 
 .about-container,
@@ -201,10 +218,18 @@ nav {
     }
 }
 
-article header h1.header {
-    width: 100%;
-    margin-top: 2.5em;
-    font-size: 4.2rem;
+article {
+  /*
+    &.posts {
+      margin-top: 8.5em;
+    }
+*/
+
+    header h1.header {
+        width: 100%;
+        /* margin-top: 2.5em; */
+        font-size: 4.2rem;
+    }
 }
 
 .portfolio {
@@ -513,14 +538,13 @@ article header h1.header {
 .portfolio-list-content,
 .post-list-content {
     margin-top: 2em;
-    font-size: smaller;
     width: 100%;
-    text-align: center;
+    text-align: justify !important;
     color: gray;
 
     p {
-        text-align: center !important;
-        margin-top: 10em;
+
+        margin-top: 1em;
     }
 }
 
@@ -821,5 +845,98 @@ footer {
 }
 
 .categories {
-      text-align: center;
+    text-align: center;
+    margin: 4.5em auto 1em auto !important;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    font-family: $heading-font-family;
+    justify-content: center;
+    padding: 0px !important;
+    box-sizing: border-box;
+    border-bottom: $nav-color 2px solid;
+
+    li {
+        padding-inline-start: 0px;
+        font-size: 1.8rem;
+    }
+
+    .merch-category {
+        background: #ecf0f1;
+        margin-bottom: 0px;
+        padding: 0.4em 0.8em !important;
+        display: flex;
+        border-top-left-radius: .2rem;
+        border-top-right-radius: .2rem;
+        border: #ecf0f1 .2rem solid;
+
+        a {
+          text-decoration: none;
+          color: $alt-fg-color;
+          font-size: 18px;
+        }
+
+        &.active {
+          border-bottom: $nav-color 2px solid;
+        }
+    }
+}
+
+.entry-meta {
+    display: none;
+}
+
+.iiif {
+    margin-top: 3em;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    margin-bottom: 4em;
+
+    .viewer {
+        width: 100%;
+        height: 100%;
+        display: block;
+        margin: auto;
+        position: absolute;
+
+        &.portrait {
+            width: 100%;
+            height: 100%;
+            display: block;
+            @media (max-width: 37.5em) {
+                width: 85vw;
+                height: calc(85vw * 1.5);
+            }
+            @media (max-width: 30em) {
+                width: 80vw;
+                height: calc(80vw * 1.5);
+            }
+        }
+
+        &.landscape {
+            width: 100%;
+            height: calc(4 / 1 * 100);
+            @media (max-width: 37.5em) {
+                width: 85vw;
+                height: calc(4 / 1 * 100);
+            }
+            @media (max-width: 30em) {
+                width: 80vw;
+                height: calc(4 / 1 * 100);
+            }
+        }
+    }
+
+    .iiif-image {
+        width: 100%;
+        padding: 0.3em;
+    }
+
+    .share {
+        position: absolute;
+        bottom: -4em;
+        right: 0;
+    }
 }

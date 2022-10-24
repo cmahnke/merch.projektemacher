@@ -8,3 +8,4 @@ assets/js/modernizr.js
 .hugo_build.lock
 patches
 static/pdfjs
+**/front.jpg

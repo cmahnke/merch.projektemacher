@@ -1,0 +1,15 @@
+{{- $contextPath := .contextPath -}}
+{{- $width := .width -}}
+{{- $page := .pageContext }}
+<div class="product-preview">
+    {{- $previewImg := ($page.Resources.GetMatch "product") -}}
+    {{- $imgLocation := path.Join $contextPath ($page.Resources.GetMatch "product") -}}
+    {{- if eq $previewImg nil -}}
+        {{ errorf "Can't find image %s" $imgLocation }}
+    {{- end -}}
+
+    {{ $image := $previewImg.Resize (printf "%dx" $width) }}
+    {{ with $image }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+    {{ end }}
+</div>
