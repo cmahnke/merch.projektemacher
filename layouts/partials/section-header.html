@@ -1,0 +1,11 @@
+<ul class="categories">
+  {{ range .Site.Sections }}
+      {{ if eq . .CurrentSection }}
+          <li class="march-category active">
+      {{ else }}
+          <li class="march-category">
+      {{ end }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+  {{- end -}}
+</ul>

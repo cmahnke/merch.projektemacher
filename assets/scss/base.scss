@@ -22,7 +22,6 @@ $nav-color: #293133 !default;
 @import "base";
 @import "content";
 @import "navigation";
-@import "ol-iiif";
 @import "icons";
 /**
  * Fontawesome SVGs - taken fom https://github.com/FortAwesome/Font-Awesome
@@ -819,4 +818,8 @@ footer {
     line-height: 2em;
     content: url($insta-dark);
     vertical-align: sub;
+}
+
+.categories {
+      text-align: center;
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+  <head>
+    <meta charset="utf-8">
+
+    {{- if and (eq .Kind "page") (eq .Section "blog") -}}
+      {{- if and .Params.link (ne .Params.link "") -}}
+        <meta http-equiv="refresh" content="0; URL={{ .Params.link }}">
+      {{- end -}}
+    {{- end -}}
+
+    {{- template "_internal/opengraph.html" . -}}
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    {{- if .Permalink -}}
+      <link rel="canonical" href="{{ .Permalink }}">
+    {{- end -}}
+
+    {{ partial "html/head/meta.html" . }}
+    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" )) -}}
+    {{- partial "html/head/script.html" . -}}
+
+    {{- if eq .FirstSection .CurrentSection -}}
+        {{- partial "html/head/page-scripts.html" . -}}
+    {{- end -}}
+
+    {{- if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") -}}
+      {{- if .Site.IsServer -}}
+        {{- $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) -}}
+        {{- $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{- $cssOpts := (dict "targetPath" "css/coder-dark.css" ) -}}
+        {{- $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint -}}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
+    {{ end }}
+
+    {{/* External Styles - Fonts etc */}}
+    {{ range .Site.Params.stylesheets -}}
+    <link href="{{ . }}" rel="stylesheet">
+    {{- end -}}
+
+    {{ range .Site.Params.custom_css }}
+      <link rel="stylesheet" href="{{ . | relURL }}" />
+    {{ end }}
+
+    {{ range .Site.Params.custom_scss }}
+      {{/* We don't change the targetPath to because it's transparent to users */}}
+      {{ if $.Site.IsServer }}
+        {{- $cssOpts := (dict "enableSourceMap" true ) -}}
+        {{- $styles := resources.Get . | toCSS $cssOpts -}}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{- else -}}
+        {{- $styles := resources.Get . | toCSS | minify | fingerprint -}}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ end }}
+    {{ end }}
+
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32.png" | absURL }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16.png" | absURL }}" sizes="16x16">
+    {{ if .Site.Params.favicon_svg }}
+        <link rel="icon" type="image/svg+xml" href="{{ .Site.Params.favicon_svg }}">
+    {{ end }}
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  </head>
+
+  {{ $csClass := "colorscheme-light" }}
+  {{ if eq .Site.Params.colorscheme "dark" }}
+    {{ $csClass = "colorscheme-dark" }}
+  {{ else if eq .Site.Params.colorscheme "auto" }}
+    {{ $csClass = "colorscheme-auto" }}
+  {{ end }}
+  <body class="{{ $csClass }} {{ if .IsHome }} home {{ end }}">
+    <main class="wrapper">
+      {{ partial "header.html" . }}
+
+      {{ block "content" . }}{{ end }}
+
+    </main>
+    {{ partial "footer.html" . }}
+  </body>
+
+</html>

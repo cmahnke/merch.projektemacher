@@ -7,3 +7,115 @@ canonifyurls = true
 disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
+
+[module]
+    [[module.mounts]]
+        source = "assets/scss"
+        target = "assets/scss"
+
+    [[module.mounts]]
+        source = "assets/js"
+        target = "assets/js"
+
+    [[module.mounts]]
+        source = "static"
+        target = "static"
+
+[languages]
+    [languages.de]
+        languagename = "Deutsch"
+
+        [languages.de.params]
+            tagLines = ["Blog Potpourri", "Blogfabrik"]
+
+        [languages.de.menu]
+
+            [[languages.de.menu.main]]
+                name = "Blogs"
+                weight = 1
+                url = "https://projektemacher.org/blogs/"
+
+            [[languages.de.menu.main]]
+                name = "News"
+                weight = 2
+                url = "https://projektemacher.org/posts/"
+
+            [[languages.de.menu.main]]
+                name = "Archiv"
+                weight = 3
+                url = "https://projektemacher.org/archive/"
+
+            [[languages.de.menu.main]]
+                name = "Suche"
+                weight = 4
+                url = "https://projektemacher.org/search/"
+
+            [[languages.de.menu.main]]
+                name = "Über"
+                weight = 5
+                url = "https://projektemacher.org/about/"
+
+            [[languages.de.menu.main]]
+                name = "Merch"
+                weight = 6
+                url = "/"
+
+            [[languages.de.menu.main]]
+                name = "Kontakt"
+                weight = 7
+                url = "https://projektemacher.org/contact/"
+
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.params]
+            info = "Blog factory"
+            description = "Blog factory"
+            tagLines = ["Blog potpourri", "Blog factory"]
+            footercontent = ""
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+                name = "Blogs"
+                weight = 1
+                url = "https://projektemacher.org/en/blogs/"
+
+            [[languages.en.menu.main]]
+                name = "News"
+                weight = 2
+                url = "https://projektemacher.org/en/posts/"
+
+            [[languages.en.menu.main]]
+                name = "Archive"
+                weight = 3
+                url = "https://projektemacher.org/en/archive/"
+
+            [[languages.en.menu.main]]
+                name = "Search"
+                weight = 4
+                url = "https://projektemacher.org/en/search/"
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 5
+                url = "https://projektemacher.org/en/about/"
+
+            [[languages.en.menu.main]]
+                name = "Merch"
+                weight = 6
+                url = "https://merch.projektemacher.org/en/"
+
+            [[languages.en.menu.main]]
+                name = "Contact"
+                weight = 7
+                url = "https://projektemacher.org/en/contact/"
+
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+
+[imaging]
+    quality = 95
