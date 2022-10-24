@@ -424,11 +424,25 @@ article {
 
 .list ul {
     li {
+        display: flex;
         margin-bottom: 0.8em;
         flex-direction: column;
 
+        .date {
+            display:none;
+        }
+
+        &.post-preview {
+          margin-top: 2.4em;
+        }
+
         .post-heading {
             display: flex;
+
+            .title {
+                font-size: larger;
+                padding-bottom: .8rem;
+            }
 
             .collapsed,
             .title:focus,
@@ -449,8 +463,9 @@ article {
         }
 
         .post-snippet {
+            display: flex;
+
             .description {
-                margin-left: 23.5rem;
                 display: block;
             }
 
@@ -605,102 +620,6 @@ body {
 
     a {
         text-decoration: none;
-    }
-}
-
-.archive {
-    .archive-filter {
-        margin: auto;
-        width: fit-content;
-
-        .filter-header {
-            margin: 2.4rem 0 1.2rem;
-        }
-
-        .filter-list {
-            columns: 3;
-            column-gap: 2em;
-
-            .filter-checkbox {
-                margin-right: 0.3em;
-            }
-
-            .filter {
-                padding: 0.3em;
-                cursor: pointer;
-            }
-        }
-        @media only screen and (max-width: 768px) {
-            .filter-list {
-                columns: 2;
-                column-gap: 1em;
-            }
-        }
-    }
-
-    .year-header {
-        line-height: unset;
-        display: inline;
-    }
-
-    ul.month-section,
-    ul.year-section {
-        padding-top: unset;
-    }
-
-    .fa-plus:before {
-        display: inline-block;
-        width: 1em;
-        content: url($plus-dark);
-        font-size: 0.7em;
-        margin-right: 0.6em;
-    }
-
-    .fa-minus:before {
-        display: inline-block;
-        width: 1em;
-        content: url($minus-dark);
-        font-size: 0.7em;
-        margin-right: 0.6em;
-    }
-
-    a {
-        &[aria-expanded=true] .fa-plus {
-            display: none;
-        }
-
-        &[aria-expanded=false] .fa-minus {
-            display: none;
-        }
-
-        &:active,
-        &:hover,
-        &:visited {
-            text-decoration: none;
-            color: $fg-color;
-        }
-    }
-
-    .collapse-header {
-        display: block;
-        color: $fg-color;
-        width: 30%;
-    }
-    font-family: $heading-font-family;
-
-    li.month-section {
-        margin: 0 2em;
-    }
-
-    .year {
-        font-size: x-large;
-        font-weight: bold;
-        margin: 0.6em 0;
-    }
-
-    .month {
-        font-size: large;
-        font-weight: bold;
     }
 }
 

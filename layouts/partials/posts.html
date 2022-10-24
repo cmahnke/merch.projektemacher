@@ -41,56 +41,26 @@
 
         {{ range $pages }}
 
-        <li>
+        <li class="post-preview">
           <div class="post-heading">
-              {{- $dir := split (string (path.Dir .Path)) "/" -}}
-              {{- $article := last 1 $dir -}}
-              {{- $id := index $dir 1 -}}
-              {{- $dir = first (sub (len $dir) 1) $dir -}}
-              {{- $section := first 1 $dir -}}
-              {{- $displayName := "" -}}
-              {{- $postLink := "" -}}
-              {{- $prefix := "" -}}
-              {{- if gt (len $dir) 1 -}}
-                  {{- $prefix = index $dir 1 -}}
-              {{- end -}}
-              {{- if gt (len $dir) 1 -}}
-                {{- $linkPrefix := "" -}}
-                {{- $prefix := index $dir 1 -}}
-                {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-                {{- $blogPage := .Site.GetPage $sectionHeading -}}
-                {{- $displayName = printf "%s: " $blogPage.Title -}}
-                {{- if ($blogPage.Param "linkPrefix") -}}
-                    {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
-                {{- else -}}
-                    {{ $linkPrefix = $blogPage.Param "link" -}}
-                {{- end -}}
-                {{- $postLink = split (string .Path) "/" -}}
-                {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
-                {{- $postLink = delimit $postLink "/" -}}
-                {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
-                {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
-              {{- end -}}
-              {{ $openExternal := true }}
-              {{- if eq $postLink "" }}
-                {{- $postLink = printf "#%s" $id -}}
-                {{ $openExternal = false }}
-              {{- end -}}
             <span class="date">
                 {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
             </span>
             <span class="link">
-                <a class="title" href="{{ .RelPermalink }}">{{- $displayName }}{{ .Title -}}</a>
+                <a class="title" href="{{ .RelPermalink }}">{{ .Title -}}</a>
             </span>
           </div>
           <div class="post-snippet">
-            {{- $page := .Page -}}
-            {{- $context := path.Dir .File.Path -}}
-            {{ partial "product-preview.html" (dict "context" . "pageContext" $page "contextPath" $context "width" 150) }}
-            {{ if ne .Description ""}}
-              <span class="description">{{- .Description | markdownify -}}</span>
+            {{ if ne .Summary ""}}
+                <span class="description">{{- .Summary -}}..
             {{ else }}
-                <span class="post-spacer">&nbsp;</span>
+                <span class="description">{{- .Description | markdownify -}}..
+            {{ end }}
+            <br /><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></span>
+            {{- $page := .Page -}}
+            {{/* {{- $context := path.Dir .File.Path -}} */}}
+            {{ if and (ne .Kind "section") (not .IsHome) }}
+                {{ partial "product-preview.html" (dict "context" . "pageContext" $page "width" 150) }}
             {{ end }}
 
           </div>
