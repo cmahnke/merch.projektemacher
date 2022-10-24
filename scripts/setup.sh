@@ -2,6 +2,11 @@
 
 SOURCE="themes/projektemacher-base/static/images/cm.svg" OPTIONS="-transparent white static/images/favicon-128.png" ./themes/projektemacher-base/scripts/favicon.sh
 
+echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
+if [ -z "$SKIP_IIIF" ] ; then
+    ./scripts/iiif.sh
+fi
+
 echo "Calling theme scripts"
 for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
     echo "Running $SCRIPT"
