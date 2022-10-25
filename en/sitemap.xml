@@ -2,7 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://merch.projektemacher.org/en/clothing/all-seeing-wifi/</loc>
+    <lastmod>2022-05-31T15:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/all-seeing-wifi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/all-seeing-wifi/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/en/clothing/</loc>
+    <lastmod>2022-05-31T15:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/</loc>
+    <lastmod>2022-05-31T15:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/"
+                />
+  </url><url>
     <loc>https://merch.projektemacher.org/en/</loc>
+    <lastmod>2022-05-31T15:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -12,6 +52,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://merch.projektemacher.org/en/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/</loc>
+    <lastmod>2021-07-25T20:45:46+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/"
                 />
   </url>
 </urlset>
