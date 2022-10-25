@@ -44,6 +44,10 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
+      - name: Cleanup
+        run: |
+          find ./docs/ -name front.jpg -exec rm {} \;
+
       - name: Puppeteer
         run: |
           ./themes/projektemacher-base/scripts/github/check-js-errors.sh
