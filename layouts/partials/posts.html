@@ -52,11 +52,11 @@
           </div>
           <div class="post-snippet">
             {{ if ne .Summary ""}}
-                <span class="description">{{- .Summary -}}..
+                <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Summary -}}..
             {{ else }}
-                <span class="description">{{- .Description | markdownify -}}..
+                <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Description | markdownify -}}..
             {{ end }}
-            <br /><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></span>
+            </a><br /><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></span>
             {{- $page := .Page -}}
             {{/* {{- $context := path.Dir .File.Path -}} */}}
             {{ if and (ne .Kind "section") (not .IsHome) }}

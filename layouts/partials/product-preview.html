@@ -11,6 +11,8 @@
 
     {{ $image := $previewImg.Resize (printf "%dx" $width) }}
     {{ with $image }}
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+        <a class="preview-link" href="{{ $context.RelPermalink}}">
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+        </a>
     {{ end }}
 </div>
