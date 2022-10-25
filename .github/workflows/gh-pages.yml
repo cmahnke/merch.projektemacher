@@ -23,7 +23,15 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
+      - name: Create IIIF derivates
+# UID is also available via $(id -u)
+        run: |
+          echo "Running as ${UID}"
+          docker run -e CHOWN_UID=${UID} -e URL_PREFIX="https://merch.projektemacher.org/" -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl-uploader sh -c "cd ${PWD} && ./scripts/iiif.sh"
+
       - name: Generate Files
+        env:
+          SKIP_IIIF: yes
         run: |
           ./scripts/setup.sh
 
