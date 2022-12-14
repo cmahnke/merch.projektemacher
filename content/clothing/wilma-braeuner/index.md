@@ -15,3 +15,5 @@ resources:
     preview: true
 ---
 Das Shirt zur [Ausstellung](https://xn--wilmabruner-r8a.de/)!
+
+Wilma Bräuners's Signatur, wie auf ihren Kalendern.

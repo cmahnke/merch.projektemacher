@@ -15,3 +15,5 @@ resources:
     preview: true
 ---
 The shirt to the [exhibition](https://xn--wilmabruner-r8a.de/)!
+
+Wilma Bräuner's signature, as on her calendars.

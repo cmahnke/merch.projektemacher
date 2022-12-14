@@ -9,3 +9,5 @@ resources:
     preview: true
 ---
 The shirt to the [blog](https://ric-unknownartist.projektemacher.org/)!
+
+Just Ric's [signature](https://ric-unknownartist.projektemacher.org/ric/).
