@@ -3,7 +3,7 @@ title: "Der praktische Hynotiseuer"
 description: ''
 date: 2022-07-19T15:00:00+02:00
 resources:
-- src: "front.jpg"
+- src: "front.jxl"
   name: front
   params:
     iiif: front/info.json

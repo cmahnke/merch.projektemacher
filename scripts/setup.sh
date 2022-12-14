@@ -19,4 +19,4 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
 done
 
 
-./themes/projektemacher-base/scripts/image-stubs.sh
+#./themes/projektemacher-base/scripts/jxl-jpg-stubs.sh

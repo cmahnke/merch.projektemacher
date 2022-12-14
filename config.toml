@@ -112,6 +112,10 @@ summaryLength = 30
                 weight = 7
                 url = "https://projektemacher.org/en/contact/"
 
+[mediaTypes]
+# See https://www.loc.gov/preservation/digital/formats/fdd/fdd000538.shtml
+  [mediaTypes."image/jxl"]
+    suffixes = ["jxl"]
 
 [markup]
     [markup.goldmark]

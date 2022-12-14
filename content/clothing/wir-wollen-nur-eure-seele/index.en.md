@@ -3,7 +3,7 @@ title: "Wir wollen nur eure Seele"
 description: 'The first shirt'
 date: 2021-07-25T20:45:46+02:00
 resources:
-- src: "front.jpg"
+- src: "front.jxl"
   name: front
   params:
     iiif: front/info.json

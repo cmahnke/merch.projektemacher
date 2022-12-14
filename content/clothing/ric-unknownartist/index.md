@@ -2,7 +2,6 @@
 title: "Ric - ein unbekannter Künstler"
 description: ''
 date: 2022-11-28T05:47:12+02:00
-draft: true
 resources:
 - src: "web.png"
   name: product
