@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/</loc>
-    <lastmod>2022-07-19T15:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/"
-                />
-  </url><url>
     <loc>https://merch.projektemacher.org/clothing/</loc>
-    <lastmod>2022-07-19T15:00:00+02:00</lastmod>
+    <lastmod>2022-12-05T18:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +16,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/</loc>
-    <lastmod>2022-07-19T15:00:00+02:00</lastmod>
+    <lastmod>2022-12-05T18:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,6 +26,45 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://merch.projektemacher.org/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/clothing/wilma-braeuner/</loc>
+    <lastmod>2022-12-05T18:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/wilma-braeuner/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/wilma-braeuner/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/clothing/ric-unknownartist/</loc>
+    <lastmod>2022-11-28T05:47:12+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/ric-unknownartist/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/ric-unknownartist/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/</loc>
+    <lastmod>2022-07-19T15:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/"
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/clothing/all-seeing-wifi/</loc>
