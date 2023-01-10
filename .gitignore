@@ -10,3 +10,4 @@ patches
 static/pdfjs
 **/front.jpg
 content/**/front/*
+content/**/title/*

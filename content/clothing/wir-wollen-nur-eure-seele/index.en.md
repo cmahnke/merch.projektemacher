@@ -19,3 +19,6 @@ This book by Ulrich Bäumer warns against the dangers of "occult" rock music. Al
 Much of what you can read there seems familiar as an urban legend if you already lived in the 80s or early 90s. One of the few testimonies of the ["Satanic Panic"](https://en.wikipedia.org/wiki/Satanic_panic) that made it to Germany in book form.
 
 The title of the book also inspired the Ärzte [to name their second live album](https://en.wikipedia.org/wiki/Wir_wollen_nur_deine_Seele) after it.
+
+
+<a class="worldcat" href="https://worldcat.org/de/title/311367588">&nbsp;</a>

@@ -17,3 +17,5 @@ resources:
 The book "Der praktische Hypnotiseur Anleitung zum Hypnotisieren sowie zur Erteilung von Suggestionen zu Heil- u. Erziehungszwecken" by Reinhold Gerling was a bestseller, as can be seen from the number of copies. No wonder with such a popular topic.
 
 And not only the mixture of psychology, occultism and advice literature makes the book interesting, the cover is also an eye-catcher!
+
+<a class="worldcat" href="https://worldcat.org/de/title/695335268">&nbsp;</a>
