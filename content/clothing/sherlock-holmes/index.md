@@ -19,7 +19,6 @@ resources:
   name: product
   params:
     preview: true
-draft: true
 ---
 Das Buch "Shelock Homes hat ausgedient" von Klaus Polkehn, erschienen im Kinderbuchverlag Berlin 1961 ist ein interessantes Beispiel für die Werbung für den Beruf des [(Volks-) Polizisten](https://de.wikipedia.org/wiki/Deutsche_Volkspolizei).
 

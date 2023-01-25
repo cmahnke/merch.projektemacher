@@ -19,7 +19,6 @@ resources:
   name: product
   params:
     preview: true
-draft: true
 ---
 The book "Shelock Homes hat ausgedient" by Klaus Polkehn, published by Kinderbuchverlag Berlin in 1961 is an interesting example of advertising for the profession of [(people's) policeman](https://en.wikipedia.org/wiki/Volkspolizei).
 
