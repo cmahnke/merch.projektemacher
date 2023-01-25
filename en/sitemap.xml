@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://merch.projektemacher.org/en/clothing/</loc>
-    <lastmod>2022-12-05T18:00:00+02:00</lastmod>
+    <lastmod>2022-12-31T19:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/en/</loc>
-    <lastmod>2022-12-05T18:00:00+02:00</lastmod>
+    <lastmod>2022-12-31T19:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -26,6 +26,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://merch.projektemacher.org/en/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/en/clothing/sherlock-holmes/</loc>
+    <lastmod>2022-12-31T19:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/sherlock-holmes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/sherlock-holmes/"
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/en/clothing/wilma-braeuner/</loc>
@@ -78,19 +91,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://merch.projektemacher.org/en/clothing/all-seeing-wifi/"
-                />
-  </url><url>
-    <loc>https://merch.projektemacher.org/en/clothing/sherlock-holmes/</loc>
-    <lastmod>2021-12-31T19:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://merch.projektemacher.org/clothing/sherlock-holmes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merch.projektemacher.org/en/clothing/sherlock-holmes/"
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/</loc>
