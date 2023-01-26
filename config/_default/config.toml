@@ -1,0 +1,14 @@
+[params]
+
+    [params.preview]
+        outputPrefix = "ogPreview-overlay"
+        outputSuffix = ".png"
+        format =  "svg"
+        image = "web.png"
+        source = "file"
+        [params.preview.size]
+            height = 630
+            width = 1200
+        [params.preview.svg]
+            template = "./Source Files/Other/preview-template.svg"
+            removeMissing = true

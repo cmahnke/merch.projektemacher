@@ -18,5 +18,7 @@ for SCRIPT in $PWD/themes/projektemacher-base/scripts/init/*.sh ; do
     fi
 done
 
+# Generate Previews
+./themes/projektemacher-base/scripts/preview.sh
 
 #./themes/projektemacher-base/scripts/jxl-jpg-stubs.sh
