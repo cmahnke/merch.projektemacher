@@ -32,7 +32,7 @@ summaryLength = 30
         [languages.de.menu]
 
             [[languages.de.menu.main]]
-                name = "Blogs"
+                name = "Seiten & Blogs"
                 weight = 1
                 url = "https://projektemacher.org/blogs/"
 
@@ -78,7 +78,7 @@ summaryLength = 30
         [languages.en.menu]
 
             [[languages.en.menu.main]]
-                name = "Blogs"
+                name = "Sites & Blogs"
                 weight = 1
                 url = "https://projektemacher.org/en/blogs/"
 
