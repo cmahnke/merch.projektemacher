@@ -12,3 +12,4 @@ static/pdfjs
 content/**/front/*
 content/**/title/*
 content/**/ogPreview-overlay.*
+data/stats.json
