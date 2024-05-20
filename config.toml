@@ -147,3 +147,6 @@ defaultMarkdownHandler = 'goldmark'
 
 [imaging]
     quality = 95
+
+[build]
+  writeStats = true
