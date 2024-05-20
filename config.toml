@@ -8,6 +8,7 @@ disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
 summaryLength = 30
+enableGitInfo = true
 
 [module]
     [[module.mounts]]
