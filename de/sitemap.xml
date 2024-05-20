@@ -2,36 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://merch.projektemacher.org/clothing/</loc>
-    <lastmod>2023-09-19T15:00:00+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merch.projektemacher.org/en/clothing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://merch.projektemacher.org/clothing/"
-                />
-  </url><url>
-    <loc>https://merch.projektemacher.org/</loc>
-    <lastmod>2023-09-19T15:00:00+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merch.projektemacher.org/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://merch.projektemacher.org/"
-                />
-  </url><url>
     <loc>https://merch.projektemacher.org/clothing/sherlock-holmes/</loc>
-    <lastmod>2022-12-31T19:00:00+02:00</lastmod>
+    <lastmod>2023-01-25T18:22:24+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -45,7 +17,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/clothing/wilma-braeuner/</loc>
-    <lastmod>2022-12-05T18:00:00+02:00</lastmod>
+    <lastmod>2022-12-14T09:23:16+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -59,7 +31,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/clothing/ric-unknownartist/</loc>
-    <lastmod>2022-11-28T05:47:12+02:00</lastmod>
+    <lastmod>2022-12-14T09:23:16+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -73,7 +45,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/</loc>
-    <lastmod>2022-07-19T15:00:00+02:00</lastmod>
+    <lastmod>2023-01-10T06:43:17+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -87,7 +59,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/clothing/all-seeing-wifi/</loc>
-    <lastmod>2022-05-31T15:00:00+02:00</lastmod>
+    <lastmod>2022-10-24T20:14:56+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -101,7 +73,7 @@
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/</loc>
-    <lastmod>2021-07-25T20:45:46+02:00</lastmod>
+    <lastmod>2023-01-10T06:43:17+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"
@@ -112,6 +84,34 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/clothing/</loc>
+    <lastmod>2022-10-26T06:46:13+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/</loc>
+    <lastmod>2022-10-26T06:46:13+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/"
                 />
   </url>
 </urlset>
