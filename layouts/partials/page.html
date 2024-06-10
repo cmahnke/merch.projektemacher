@@ -10,7 +10,10 @@
         </header>
         <div class="entry-meta">
             {{- if not .Params.metaPage -}}
-            <span class="date">{{ partial "date.html" . }}</span>
+                {{- .Date | time.Format ":date_full" -}}
+                {{/*
+                  <span class="date">{{ partial "date.html" . }}</span>
+                */}}
             {{- end -}}
         </div>
 

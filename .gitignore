@@ -13,3 +13,7 @@ content/**/front/*
 content/**/title/*
 content/**/ogPreview-overlay.*
 data/stats.json
+**/vips-properties.xml
+
+static/fonts/
+assets/css/
