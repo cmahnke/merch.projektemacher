@@ -63,5 +63,15 @@ Einfach Ric&amp;rsquo;s Signatur.</description>
 Vieles von dem was man dort lesen kann, kommt einem als urbane Legende bekannt vor, wenn man in den 80ern bzw.</description>
     </item>
     
+    <item>
+      <title>Datenschutzerklärung</title>
+      <link>https://merch.projektemacher.org/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://merch.projektemacher.org/privacy/</guid>
+      <description>Hosting Der Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser übermittelt:
+IP-Adresse Die Adresse der vorher besuchten Website (Referer [sic!] Anfrage-Header) Datum und Uhrzeit der Anfrage Zeitzonendifferenz zur Greenwich Mean Time Inhalt der Anforderung HTTP-Statuscode Übertragene Datenmenge Website, von der die Anforderung kommt Informationen zu Browser und Betriebssystem Das ist erforderlich, um die Website anzuzeigen und die Stabilität und Sicherheit zu gewährleisten.</description>
+    </item>
+    
   </channel>
 </rss>

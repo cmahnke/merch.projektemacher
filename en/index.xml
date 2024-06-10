@@ -63,5 +63,15 @@ Just Ric&amp;rsquo;s signature.</description>
 Much of what you can read there seems familiar as an urban legend if you already lived in the 80s or early 90s.</description>
     </item>
     
+    <item>
+      <title>Privacy policy</title>
+      <link>https://merch.projektemacher.org/en/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://merch.projektemacher.org/en/privacy/</guid>
+      <description>Hosting The hoster collects the following data transmitted by your browser in log files:
+IP address The address of the previously visited website (Referer [sic!] request header) Date and time of the enquiry Time zone difference to Greenwich Mean Time Content of the request HTTP status code Amount of data transferred Website from which the request originates Information about the browser and operating system This is necessary to display the website and to ensure stability and security.</description>
+    </item>
+    
   </channel>
 </rss>
