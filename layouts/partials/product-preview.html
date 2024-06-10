@@ -5,14 +5,16 @@
 <div class="product-preview">
     {{- $previewImg := ($page.Resources.GetMatch "product") -}}
     {{- $imgLocation := path.Join $contextPath ($page.Resources.GetMatch "product") -}}
-    {{- if eq $previewImg nil -}}
-        {{ errorf "Can't find image %s: %#v" $imgLocation $previewImg }}
+    {{- if not (hasPrefix $contextPath "privacy") -}}
+      {{- if eq $previewImg nil -}}
+          {{- errorf "Can't find image %s: %#v" $imgLocation $previewImg -}}
+      {{- else -}}
+          {{- $image := $previewImg.Resize (printf "%dx" $width) -}}
+          {{- with $image -}}
+              <a class="preview-link" href="{{ $context.RelPermalink}}">
+                  <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+              </a>
+          {{- end -}}
+      {{- end -}}
     {{- end -}}
-
-    {{ $image := $previewImg.Resize (printf "%dx" $width) }}
-    {{ with $image }}
-        <a class="preview-link" href="{{ $context.RelPermalink}}">
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
-        </a>
-    {{ end }}
 </div>
