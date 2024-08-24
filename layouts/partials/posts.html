@@ -27,7 +27,7 @@
             {{- $pages = where .Site.Pages "Section" (path.Dir (index .CurrentSection.Sections 0).File.Dir) -}}
         {{ end }}
         {{- .Scratch.Set "pages" $pages -}}
-        {{- $mainSite := .Sites.First -}}
+        {{- $mainSite := .Sites.Default -}}
         {{- if ne $mainSite .Site -}}
             {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" .Section) ) }}
         {{- end -}}
