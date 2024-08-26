@@ -52,17 +52,17 @@
       "id": "https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/",
       "type": "Text",
       "format": "text/html",
-"label": {
-    "en": [
-      "Der praktische Hynotiseuer"
-    ],
-      "de": [
-        "Der praktische Hynotiseuer"
-      ]
+
+      "label": {
+          "en": [
+            "Projektemacher Merch: Der praktische Hynotiseuer"
+          ],
+            "de": [
+              "Projektemacher Merch: Der praktische Hynotiseuer"
+            ]
+          }
     }
-}
-  ],
-"label": {
+  ],"label": {
     "en": [
       "Der praktische Hynotiseuer"
     ],

@@ -52,17 +52,17 @@
       "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/",
       "type": "Text",
       "format": "text/html",
-"label": {
-    "de": [
-      "Sherlock Holmes hat ausgedient"
-    ],
-      "en": [
-        "Sherlock Holmes hat ausgedient"
-      ]
+
+      "label": {
+          "de": [
+            "Projektemacher Merch: Sherlock Holmes hat ausgedient"
+          ],
+            "en": [
+              "Projektemacher Merch: Sherlock Holmes hat ausgedient"
+            ]
+          }
     }
-}
-  ],
-"label": {
+  ],"label": {
     "de": [
       "Sherlock Holmes hat ausgedient"
     ],

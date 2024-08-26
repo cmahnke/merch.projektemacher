@@ -61,17 +61,17 @@
       "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/",
       "type": "Text",
       "format": "text/html",
-"label": {
-    "de": [
-      "Wir wollen nur eure Seele"
-    ],
-      "en": [
-        "Wir wollen nur eure Seele"
-      ]
+
+      "label": {
+          "de": [
+            "Projektemacher Merch: Wir wollen nur eure Seele"
+          ],
+            "en": [
+              "Projektemacher Merch: Wir wollen nur eure Seele"
+            ]
+          }
     }
-}
-  ],
-"label": {
+  ],"label": {
     "de": [
       "Wir wollen nur eure Seele"
     ],
