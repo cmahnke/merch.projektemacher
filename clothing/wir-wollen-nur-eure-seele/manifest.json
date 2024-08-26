@@ -1,0 +1,149 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+  "type": "Manifest",
+  "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/",
+  "viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "de": [
+      "Das erste T-Shirt"
+    ],
+      "en": [
+        "The first shirt"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,
+  "thumbnail": [{
+    "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/front/full/full/0/default_hu3110252489421565860.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 491,
+    "width": 300
+  }],
+  "provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+  "homepage": [
+    {
+      "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/",
+      "type": "Text",
+      "format": "text/html",
+"label": {
+    "de": [
+      "Wir wollen nur eure Seele"
+    ],
+      "en": [
+        "Wir wollen nur eure Seele"
+      ]
+    }
+}
+  ],
+"label": {
+    "de": [
+      "Wir wollen nur eure Seele"
+    ],
+      "en": [
+        "Wir wollen nur eure Seele"
+      ]
+    }
+,"items": [{
+          "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/canvas/front",
+          "type": "Canvas",
+          "height": 4216,
+          "width": 2574,"label": {"de":["Vorderer Buchdeckel"],"en":["Front"]},"thumbnail": [{
+              "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/front/full/full/0/default_hu3110252489421565860.jpg",
+              "format": "image/jpeg",
+              "type":"Image",
+              "height": 491,
+              "width": 300
+            }
+          ],"items": [{
+            "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/annotation/front-image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{
+                "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/front/full/full/0/default.jpg",
+                "type":"Image",
+                "format":"image/jpeg",
+                "height": 4216,
+                "width": 2574,
+                "service": [{
+                  "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/front",
+                  "type": "ImageService2",
+                  "profile":"level0"
+                }]
+              },
+              "target":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/canvas/front"
+            }]
+          }]
+       },{
+          "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/canvas/product",
+          "type": "Canvas",
+          "height": 1317,
+          "width": 1179,"label": {"de":["ungezählt"],"en":["uncounted"]},"thumbnail": [{
+              "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/web_hu17220661894325570003.png",
+              "format": "image/jpeg",
+              "type":"Image",
+              "height": 335,
+              "width": 300
+            }
+          ],"items": [{
+            "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/annotation/.",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/annotation/.-image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{
+                "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/./full/full/0/default.jpg",
+                "type":"Image",
+                "format":"image/jpeg",
+                "height": 1317,
+                "width": 1179,
+                "service": [{
+                  "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/.",
+                  "type": "ImageService2",
+                  "profile":"level0"
+                }]
+              },
+              "target":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/canvas/product"
+            }]
+          }]
+       }]
+}
