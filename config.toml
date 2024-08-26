@@ -117,6 +117,8 @@ enableGitInfo = true
 # See https://www.loc.gov/preservation/digital/formats/fdd/fdd000538.shtml
   [mediaTypes."image/jxl"]
     suffixes = ["jxl"]
+  [mediaTypes."application/ld+json"]
+    suffixes = ["json"]
 
 [outputFormats]
   [outputFormats.iiif-manifest]
