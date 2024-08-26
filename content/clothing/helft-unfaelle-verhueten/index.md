@@ -2,6 +2,9 @@
 title: "Helft Unfälle verhüten!"
 description: ''
 date: 2023-02-24T19:00:00+02:00
+outputs:
+- html
+- iiif-manifest
 resources:
 - src: "front.jxl"
   name: front

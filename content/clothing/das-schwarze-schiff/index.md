@@ -3,6 +3,9 @@ title: "Das schwarze Schiff"
 description: ''
 draft: true
 date: 2023-09-19T15:00:00+02:00
+outputs:
+- html
+- iiif-manifest
 resources:
 - src: "front.jxl"
   name: front
