@@ -74,7 +74,7 @@
           "id":"https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/canvas/front",
           "type": "Canvas",
           "height": 5208,
-          "width": 3328,"label": {"de":["Vorderer Buchdeckel"],"en":["Front"]},"thumbnail": [{
+          "width": 3328,"label": {"de":["Vorderansicht"],"en":["Front"]},"thumbnail": [{
               "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/front/full/full/0/default_hu18140996294297771396.jpg",
               "format": "image/jpeg",
               "type":"Image",

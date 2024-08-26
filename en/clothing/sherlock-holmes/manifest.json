@@ -74,7 +74,7 @@
           "id":"https://merch.projektemacher.org/en/clothing/sherlock-holmes/canvas/front",
           "type": "Canvas",
           "height": 5167,
-          "width": 3399,"label": {"de":["Vorderer Buchdeckel"],"en":["Front"]},"thumbnail": [{
+          "width": 3399,"label": {"de":["Vorderansicht"],"en":["Front"]},"thumbnail": [{
               "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu3817932885220539763.jpg",
               "format": "image/jpeg",
               "type":"Image",
