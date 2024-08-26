@@ -2,6 +2,9 @@
 title: "Wir wollen nur eure Seele"
 description: 'The first shirt'
 date: 2021-07-25T20:45:46+02:00
+outputs:
+- html
+- iiif-manifest
 resources:
 - src: "front.jxl"
   name: front

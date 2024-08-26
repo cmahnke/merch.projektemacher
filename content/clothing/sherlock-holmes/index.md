@@ -2,6 +2,9 @@
 title: "Sherlock Holmes hat ausgedient"
 description: ''
 date: 2022-12-31T19:00:00+02:00
+outputs:
+- html
+- iiif-manifest
 resources:
 - src: "front.jxl"
   name: front
