@@ -103,38 +103,5 @@
               "target":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/canvas/front"
             }]
           }]
-       },{
-          "id":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/canvas/product",
-          "type": "Canvas",
-          "height": 1317,
-          "width": 1179,"label": {"de":["ungezählt"],"en":["uncounted"]},"thumbnail": [{
-              "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/web_hu15164208101116807222.png",
-              "format": "image/jpeg",
-              "type":"Image",
-              "height": 335,
-              "width": 300
-            }
-          ],"items": [{
-            "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/annotation/.",
-            "type": "AnnotationPage",
-            "items":[{
-              "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/annotation/.-image",
-              "type": "Annotation",
-              "motivation":"painting",
-              "body":{
-                "id":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/./full/full/0/default.jpg",
-                "type":"Image",
-                "format":"image/jpeg",
-                "height": 1317,
-                "width": 1179,
-                "service": [{
-                  "id":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/.",
-                  "type": "ImageService2",
-                  "profile":"level0"
-                }]
-              },
-              "target":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/canvas/product"
-            }]
-          }]
        }]
 }
