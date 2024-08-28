@@ -69,7 +69,7 @@
       ]
     }
 ,"items": [{
-          "id":"https://merch.projektemacher.org/en/clothing/sherlock-holmes/canvas/front",
+          "id":"https://merch.projektemacher.org/clothing/sherlock-holmes/canvas/front",
           "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 5167,
             "width": 3399,
             "thumbnail": [{
@@ -96,11 +96,11 @@
                     "type": "ImageService2",
                     "profile":"level0"
                   }]},
-              "target":"https://merch.projektemacher.org/en/clothing/sherlock-holmes/canvas/front"
+              "target":"https://merch.projektemacher.org/clothing/sherlock-holmes/canvas/front"
             }]
           }]
        },{
-          "id":"https://merch.projektemacher.org/en/clothing/sherlock-holmes/canvas/title",
+          "id":"https://merch.projektemacher.org/clothing/sherlock-holmes/canvas/title",
           "type": "Canvas","label": {"de":["Titelseite"],"en":["Title"]},"height": 5039,
             "width": 3373,
             "thumbnail": [{
@@ -127,7 +127,7 @@
                     "type": "ImageService2",
                     "profile":"level0"
                   }]},
-              "target":"https://merch.projektemacher.org/en/clothing/sherlock-holmes/canvas/title"
+              "target":"https://merch.projektemacher.org/clothing/sherlock-holmes/canvas/title"
             }]
           }]
        }]

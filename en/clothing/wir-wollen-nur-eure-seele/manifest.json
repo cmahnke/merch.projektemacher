@@ -78,7 +78,7 @@
       ]
     }
 ,"items": [{
-          "id":"https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/canvas/front",
+          "id":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/canvas/front",
           "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 4216,
             "width": 2574,
             "thumbnail": [{
@@ -105,7 +105,7 @@
                     "type": "ImageService2",
                     "profile":"level0"
                   }]},
-              "target":"https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/canvas/front"
+              "target":"https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/canvas/front"
             }]
           }]
        }]

@@ -69,7 +69,7 @@
       ]
     }
 ,"items": [{
-          "id":"https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/canvas/front",
+          "id":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/canvas/front",
           "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 5208,
             "width": 3328,
             "thumbnail": [{
@@ -96,7 +96,7 @@
                     "type": "ImageService2",
                     "profile":"level0"
                   }]},
-              "target":"https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/canvas/front"
+              "target":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/canvas/front"
             }]
           }]
        }]
