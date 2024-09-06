@@ -13,7 +13,18 @@
     "type":"Image",
     "height": 469,
     "width": 300
-  }],"provider": [
+  },{
+        "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 5208,
+        "width": 3328,
+        "service": [{
+          "id":"https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
   {
     "id": "https://projektemacher.org/",
     "type": "Agent",
