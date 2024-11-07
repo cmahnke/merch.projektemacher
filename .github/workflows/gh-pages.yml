@@ -31,6 +31,10 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Create IIIF derivates
 # UID is also available via $(id -u)
         run: |
