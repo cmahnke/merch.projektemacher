@@ -45,9 +45,6 @@
           <div class="post-heading">
             <span class="date">
                 {{- .Date | time.Format ":date_full" -}}
-                {{/*
-                  {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
-                */}}
             </span>
             <span class="link">
                 <a class="title" href="{{ .RelPermalink }}">{{ .Title -}}</a>
@@ -55,7 +52,7 @@
           </div>
           <div class="post-snippet">
             {{ if ne .Summary ""}}
-                <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Summary -}}..
+                <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Summary -}}
             {{ else }}
                 <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Description | markdownify -}}..
             {{ end }}

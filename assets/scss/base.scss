@@ -263,6 +263,10 @@ article {
 
         &.post-preview {
           margin-top: 2.4em;
+
+          p:has(.worldcat) {
+            display: none
+          }
         }
 
         .post-heading {
