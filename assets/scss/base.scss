@@ -618,3 +618,21 @@ footer {
     }
 
 }
+
+.content.page {
+  p:has(.worldcat) {
+    display: flex;
+    justify-content: flex-end;
+
+    .worldcat {
+      text-align: right;
+
+      &:before {
+        content: 'Worldcat ';
+      }
+    }
+
+  }
+
+
+}
