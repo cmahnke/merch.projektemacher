@@ -79,6 +79,10 @@ nav {
             .navigation-item {
                 .navigation-link {
                     color: black;
+
+                    i.link-icon {
+                        display: none;
+                    }
                 }
             }
 
