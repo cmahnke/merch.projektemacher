@@ -29,7 +29,7 @@
 
 
 <meta name="generator" content="Hugo 0.145.0">
-<meta name="projektemacher.org:build-date" content="2025-03-12 09:34:34.834291969 &#43;0000 UTC m=&#43;0.453050983"><meta name="projektemacher.org:git-commit" content=""><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;21&#34;,&#34;latest&#34;:&#34;2023-09-19T15:00:00&#43;02:00&#34;}">
+<meta name="projektemacher.org:build-date" content="2025-03-18 07:41:53.689438098 &#43;0000 UTC m=&#43;0.461032760"><meta name="projektemacher.org:git-commit" content=""><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;21&#34;,&#34;latest&#34;:&#34;2023-09-19T15:00:00&#43;02:00&#34;}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
 
@@ -160,9 +160,15 @@
         front_infojson_Div = document.getElementById("front_infojson");
         front_infojson = addMap(front_infojson_Div, "\/clothing\/sherlock-holmes\/front\/info.json",  0 , "/clothing/sherlock-holmes/front/");
         front_infojson_Div.data = front_infojson;
+        if (!("projektemacher" in window)) {
+          window.projektemacher = {};
+        }
+        if (!("iiif" in window.projektemacher)) {
+          window.projektemacher.iiif = {};
+        }
+        window.projektemacher.iiif[front_infojson_Div] = front_infojson;
     </script>
     <div class="share">
-
         <a href="front.jxl" class="image-download">Volle Auflösung herunterladen</a> |
         <a href="https://merch.projektemacher.org/clothing/sherlock-holmes/front/info.json" class="iiif-link"><span class="iiif-iiif">IIIF</span> <span class="iiif-manifest">Manifest</span></a> |
         <a href="#front_infojson" class="image-link">Link zu diesem Bild</a>
@@ -184,9 +190,15 @@
         title_infojson_Div = document.getElementById("title_infojson");
         title_infojson = addMap(title_infojson_Div, "\/clothing\/sherlock-holmes\/title\/info.json",  0 , "/clothing/sherlock-holmes/title/");
         title_infojson_Div.data = title_infojson;
+        if (!("projektemacher" in window)) {
+          window.projektemacher = {};
+        }
+        if (!("iiif" in window.projektemacher)) {
+          window.projektemacher.iiif = {};
+        }
+        window.projektemacher.iiif[title_infojson_Div] = title_infojson;
     </script>
     <div class="share">
-
         <a href="title.jxl" class="image-download">Volle Auflösung herunterladen</a> |
         <a href="https://merch.projektemacher.org/clothing/sherlock-holmes/title/info.json" class="iiif-link"><span class="iiif-iiif">IIIF</span> <span class="iiif-manifest">Manifest</span></a> |
         <a href="#title_infojson" class="image-link">Link zu diesem Bild</a>
