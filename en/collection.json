@@ -1,18 +1,18 @@
 {
-  "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://merch.projektemacher.org/collection.json",
-  "type": "Collection",
-  "label": {
-      "en": [
-        "Projektemacher Merch"
-      ],
-        "de": [
-          "Merch"
-        ]
-      },
-  "items": [{
-        "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/manifest.json",
-        "type": "Manifest","thumbnail": [{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://merch.projektemacher.org/collection.json",
+    "type": "Collection",
+    "label": {
+        "en": [
+          "Projektemacher Merch"
+        ],
+          "de": [
+            "Merch"
+          ]
+        },
+    "items": [{
+          "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/manifest.json",
+          "type": "Manifest","thumbnail": [{
     "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_71e199ee59d05e93.jpg",
     "format": "image/jpeg",
     "type":"Image",
@@ -30,15 +30,15 @@
           "profile":"level0"
         }]
       }],"label": {
-          "en": [
-            "Sherlock Holmes hat ausgedient"
-          ],
-                "de": [
-                  "Sherlock Holmes hat ausgedient"
-                ]}
-      },{
-        "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/manifest.json",
-        "type": "Manifest","thumbnail": [{
+            "en": [
+              "Sherlock Holmes hat ausgedient"
+            ],
+                  "de": [
+                    "Sherlock Holmes hat ausgedient"
+                  ]}
+        },{
+          "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/manifest.json",
+          "type": "Manifest","thumbnail": [{
     "id": "https://merch.projektemacher.org/clothing/der-praktische-hypnotiseur/front/full/full/0/default_hu_4d010518ad0aa928.jpg",
     "format": "image/jpeg",
     "type":"Image",
@@ -56,15 +56,15 @@
           "profile":"level0"
         }]
       }],"label": {
-          "en": [
-            "Der praktische Hynotiseuer"
-          ],
-                "de": [
-                  "Der praktische Hynotiseuer"
-                ]}
-      },{
-        "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/manifest.json",
-        "type": "Manifest","thumbnail": [{
+            "en": [
+              "Der praktische Hynotiseuer"
+            ],
+                  "de": [
+                    "Der praktische Hynotiseuer"
+                  ]}
+        },{
+          "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/manifest.json",
+          "type": "Manifest","thumbnail": [{
     "id": "https://merch.projektemacher.org/clothing/wir-wollen-nur-eure-seele/front/full/full/0/default_hu_fd80c4493022d299.jpg",
     "format": "image/jpeg",
     "type":"Image",
@@ -82,11 +82,11 @@
           "profile":"level0"
         }]
       }],"label": {
-          "en": [
-            "Wir wollen nur eure Seele"
-          ],
-                "de": [
-                  "Wir wollen nur eure Seele"
-                ]}
-      }]
-}
+            "en": [
+              "Wir wollen nur eure Seele"
+            ],
+                  "de": [
+                    "Wir wollen nur eure Seele"
+                  ]}
+        }]
+  }
