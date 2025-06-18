@@ -11,6 +11,7 @@ static/pdfjs
 **/front.jpg
 content/**/front/*
 content/**/title/*
+content/**/cover/*
 content/**/ogPreview-overlay.*
 data/stats.json
 **/vips-properties.xml
