@@ -91,5 +91,14 @@
 &lt;p&gt;This is necessary to display the website and to ensure stability and security. This corresponds to a legitimate interest within the meaning of &lt;a href=&#34;https://gdpr-info.eu/art-6-gdpr/&#34; target=&#34;_blank&#34;&gt;Art. 6 para. 1 sentence 1 lit. f GDPR&lt;/a&gt;.&lt;/p&gt;</description>
       </item>
     
+    <item>
+      <title>Tags</title>
+      <link>https://merch.projektemacher.org/en/meta/tags/index.json</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://merch.projektemacher.org/en/meta/tags/index.json</guid>
+      <description></description>
+      </item>
+    
   </channel>
 </rss>
