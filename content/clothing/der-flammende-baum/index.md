@@ -1,8 +1,7 @@
 ---
 title: "Der flammende Baum"
 description: ''
-draft: true
-date: 2025-12-01T15:00:00+02:00
+date: 2025-12-01T05:00:00+02:00
 outputs:
 - html
 - iiif-manifest
@@ -13,7 +12,7 @@ resources:
     iiif: front/info.json
     class: front
     preview: false
-- src: "web.png"
+- src: "web.jpg"
   name: product
   params:
     preview: true
