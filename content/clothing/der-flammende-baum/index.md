@@ -12,7 +12,7 @@ resources:
     iiif: front/info.json
     class: front
     preview: false
-- src: "web.jpg"
+- src: "web.png"
   name: product
   params:
     preview: true
