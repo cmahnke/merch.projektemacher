@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://merch.projektemacher.org/clothing/der-flammende-baum/</loc>
+    <lastmod>2025-11-17T22:17:19+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/der-flammende-baum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/der-flammende-baum/"
+                />
+  </url><url>
     <loc>https://merch.projektemacher.org/clothing/sherlock-holmes/</loc>
     <lastmod>2024-08-26T07:09:51+02:00</lastmod>
     <changefreq>weekly</changefreq>
