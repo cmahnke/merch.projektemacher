@@ -1,5 +1,9 @@
+@use "functions/color" as *;
+/* @use "hugo:vars" as *; */
+
 @import "normalize";
 @import "bootstrap.scss";
+
 /* Variables */
 $text-font-family: Lora, Georgia, serif;
 $heading-font-family: Lato, Helvetica, sans-serif;
@@ -482,7 +486,7 @@ footer {
     background: #293133;
     font-family: $heading-font-family;
     margin-top: 3em;
-    max-height: 5.5em;
+    /* max-height: 5.5em; */
 
     .footer-container {
         max-width: 60%;

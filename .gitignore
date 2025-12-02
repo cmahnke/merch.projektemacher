@@ -18,3 +18,6 @@ data/stats.json
 
 static/fonts/
 assets/css/
+assets/scss/npm-fonts/
+assets/scss/flags/
+hugo_stats.json

@@ -1,11 +1,14 @@
 <ul class="categories">
-  {{ range .Site.Sections }}
-      {{ if eq . .CurrentSection }}
-          <li class="merch-category active">
-      {{ else }}
-          <li class="merch-category">
-      {{ end }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </li>
+  {{- range .Site.Sections -}}
+    {{- if and (eq .Params.displayinlist false) (eq .Params.metaPage true) -}}
+      {{- continue -}}
+    {{- end -}}
+    {{- if eq . .CurrentSection -}}
+      <li class="merch-category active">
+    {{- else -}}
+      <li class="merch-category">
+    {{- end -}}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
   {{- end -}}
 </ul>

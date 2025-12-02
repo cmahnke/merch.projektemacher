@@ -2,9 +2,9 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-    {{- if ne .CurrentSection .FirstSection -}}
-        {{ partial "page.html" . }}
-    {{ else }}
-        {{ partial "posts.html" . }}
-    {{- end -}}
+  {{- if ne .CurrentSection .FirstSection -}}
+    {{- partial "page.html" . -}}
+  {{- else }}
+    {{- partial "posts.html" . -}}
+  {{- end -}}
 {{ end }}

@@ -4,70 +4,66 @@
       {{ partial "section-header.html" . }}
       <article class="posts">
 
-      <header>
+        <header>
           <h1 class="title header">
             {{- if eq .Kind "term" -}}
               {{- i18n .Data.Singular | title -}}
               {{- print ": " -}}
             {{- end -}}
-            {{ if ne .Title .Site.Home.Title }}
+            {{- if ne .Title .Site.Home.Title -}}
                 {{ .Site.Home.Title }}: {{ .Title }}
-            {{ else }}
-                {{- .Title -}}
-            {{ end }}
+            {{- else -}}
+              {{- .Title -}}
+            {{- end -}}
           </h1>
-      </header>
-      <div class="post-list-content">
-        {{ .Content }}
-      </div>
-      <ul>
+        </header>
+        <div class="post-list-content">
+          {{ .Content }}
+        </div>
+        <ul>
 
-        {{- $pages := where .Site.Pages "Section" .Section -}}
-        {{ if .IsHome }}
-            {{- $pages = where .Site.Pages "Section" (path.Dir (index .CurrentSection.Sections 0).File.Dir) -}}
-        {{ end }}
-        {{- .Scratch.Set "pages" $pages -}}
-        {{- $mainSite := .Sites.Default -}}
-        {{- if ne $mainSite .Site -}}
-            {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" .Section) ) }}
-        {{- end -}}
-        {{- $pages = .Scratch.Get "pages" -}}
-        {{/* Filter non post pages */}}
-        {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-        {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-        {{- $pages = where $pages "Params.metaPage" "!=" true -}}
-        {{- $pages = where $pages "Date.IsZero" "==" false -}}
-        {{- $pages = where $pages ".Kind" "!=" "section" -}}
+          {{- $pages := where .Site.Pages "Section" .Section -}}
+          {{ if .IsHome }}
+              {{- $pages = where .Site.Pages "Section" (path.Dir (index .CurrentSection.Sections 0).File.Dir) -}}
+          {{ end }}
+          {{- .Scratch.Set "pages" $pages -}}
+          {{- $mainSite := .Sites.Default -}}
+          {{- if ne $mainSite .Site -}}
+              {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" .Section) ) }}
+          {{- end -}}
+          {{- $pages = .Scratch.Get "pages" -}}
+          {{/* Filter non post pages */}}
+          {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+          {{- $pages = where $pages "Params.displayInList" "!=" false -}}
+          {{- $pages = where $pages "Params.metaPage" "!=" true -}}
+          {{- $pages = where $pages "Date.IsZero" "==" false -}}
+          {{- $pages = where $pages ".Kind" "!=" "section" -}}
 
-        {{ range $pages }}
-
-        <li class="post-preview">
-          <div class="post-heading">
-            <span class="date">
-                {{- .Date | time.Format ":date_full" -}}
-            </span>
-            <span class="link">
-                <a class="title" href="{{ .RelPermalink }}">{{ .Title -}}</a>
-            </span>
-          </div>
-          <div class="post-snippet">
-            {{ if ne .Summary ""}}
-                <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Summary -}}
-            {{ else }}
-                <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Description | markdownify -}}..
-            {{ end }}
-            </a><br /><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></span>
-            {{- $page := .Page -}}
-            {{/* {{- $context := path.Dir .File.Path -}} */}}
-            {{ if and (ne .Kind "section") (not .IsHome) }}
-                {{ partial "product-preview.html" (dict "context" . "pageContext" $page "width" 150) }}
-            {{ end }}
-
-          </div>
-        </li>
-        {{ end }}
-      </ul>
-
-    </article>
+          {{ range $pages }}
+            <li class="post-preview">
+              <div class="post-heading">
+                <span class="date">
+                  {{- .Date | time.Format ":date_full" -}}
+                </span>
+                <span class="link">
+                  <a class="title" href="{{ .RelPermalink }}">{{ .Title -}}</a>
+                </span>
+              </div>
+              <div class="post-snippet">
+                {{ if ne .Summary ""}}
+                  <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Summary -}}
+                {{ else }}
+                  <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Description | markdownify -}}..
+                {{ end }}
+                </a><br /><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></span>
+                {{- $page := .Page -}}
+                {{ if and (ne .Kind "section") (not .IsHome) }}
+                  {{ partial "product-preview.html" (dict "context" . "pageContext" $page "width" 150) }}
+                {{ end }}
+              </div>
+            </li>
+          {{ end }}
+        </ul>
+      </article>
     </section>
 </div>
