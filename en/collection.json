@@ -13,7 +13,7 @@
     "items": [{
           "id": "https://merch.projektemacher.org/clothing/der-flammende-baum/manifest.json",
           "type": "Manifest","thumbnail": [{
-    "id": "https://merch.projektemacher.org/clothing/der-flammende-baum/front/full/full/0/default_hu_2bf7106124498cd1.jpg",
+    "id": "https://merch.projektemacher.org/clothing/der-flammende-baum/front/full/full/0/default_hu_b9f795882399fe0c.jpg",
     "format": "image/jpeg",
     "type":"Image",
     "height": 465,
@@ -39,7 +39,7 @@
         },{
           "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/manifest.json",
           "type": "Manifest","thumbnail": [{
-    "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_71e199ee59d05e93.jpg",
+    "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_4afb81257927f90c.jpg",
     "format": "image/jpeg",
     "type":"Image",
     "height": 456,
