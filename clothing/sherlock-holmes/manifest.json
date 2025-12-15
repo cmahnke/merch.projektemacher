@@ -8,7 +8,7 @@
   "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
 }
 ,"thumbnail": [{
-    "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_4afb81257927f90c.jpg",
+    "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_71e199ee59d05e93.jpg",
     "format": "image/jpeg",
     "type":"Image",
     "height": 456,
@@ -84,7 +84,7 @@
           "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 5167,
             "width": 3399,
             "thumbnail": [{
-                "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_4afb81257927f90c.jpg",
+                "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/front/full/full/0/default_hu_71e199ee59d05e93.jpg",
                 "format": "image/jpeg",
                 "type":"Image",
                 "height": 456,
@@ -115,7 +115,7 @@
           "type": "Canvas","label": {"de":["Titelseite"],"en":["Title"]},"height": 5039,
             "width": 3373,
             "thumbnail": [{
-                "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/title/full/full/0/default_hu_5475e7ed03c0657c.jpg",
+                "id": "https://merch.projektemacher.org/clothing/sherlock-holmes/title/full/full/0/default_hu_8b64386ecabc9644.jpg",
                 "format": "image/jpeg",
                 "type":"Image",
                 "height": 448,
