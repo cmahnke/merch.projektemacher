@@ -127,18 +127,5 @@
                 hreflang="en"
                 href="https://merch.projektemacher.org/en/"
                 />
-  </url><url>
-    <loc>https://merch.projektemacher.org/en/privacy/</loc>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://merch.projektemacher.org/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merch.projektemacher.org/en/privacy/"
-                />
   </url>
 </urlset>
