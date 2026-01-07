@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://merch.projektemacher.org/en/clothing/</loc>
+    <lastmod>2026-01-07T17:26:16+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/clothing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/clothing/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/en/print/</loc>
+    <lastmod>2026-01-07T17:26:16+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/print/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/print/"
+                />
+  </url><url>
+    <loc>https://merch.projektemacher.org/en/print/kleiderbuegel/</loc>
+    <lastmod>2026-01-07T17:26:16+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/print/kleiderbuegel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/print/kleiderbuegel/"
+                />
+  </url><url>
     <loc>https://merch.projektemacher.org/en/clothing/der-flammende-baum/</loc>
     <lastmod>2025-11-17T22:17:19+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,20 +140,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/"
-                />
-  </url><url>
-    <loc>https://merch.projektemacher.org/en/clothing/</loc>
-    <lastmod>2022-10-26T06:46:13+02:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://merch.projektemacher.org/clothing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://merch.projektemacher.org/en/clothing/"
                 />
   </url><url>
     <loc>https://merch.projektemacher.org/en/</loc>

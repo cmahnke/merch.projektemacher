@@ -1,0 +1,123 @@
+{"@context": "http://iiif.io/api/presentation/3/context.json",
+"type": "Manifest",
+"id": "https://merch.projektemacher.org/en/print/kleiderbuegel/",
+"viewingDirection": "left-to-right","behavior":["paged"],
+"summary": {
+    "en": [
+      "The first book"
+    ],
+      "de": [
+        "Das erste Buch"
+      ]
+    }
+,"requiredStatement": {
+  "label": { "en": [ "Attribution" ],
+    "de": [ "Namensnennung" ]
+  },
+  "value": {"en": ["Provided by Projektemacher"],"de": ["Bereitgestellt von Projektemacher"]}
+}
+,"thumbnail": [{
+    "id": "https://merch.projektemacher.org/print/kleiderbuegel/front/full/full/0/default_hu_b245f9116eb3ff59.jpg",
+    "format": "image/jpeg",
+    "type":"Image",
+    "height": 300,
+    "width": 300
+  },{
+        "id": "https://merch.projektemacher.org/en/print/kleiderbuegel/front/full/full/0/default.jpg",
+        "format": "image/jpeg",
+        "type":"Image",
+        "height": 2480,
+        "width": 2480,
+        "service": [{
+          "id":"https://merch.projektemacher.org/en/print/kleiderbuegel/front",
+          "type": "ImageService2",
+          "profile":"level0"
+        }]
+      }],"provider": [
+  {
+    "id": "https://projektemacher.org/",
+    "type": "Agent",
+    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+    "homepage": [
+      {
+        "id": "https://projektemacher.org/",
+        "type": "Text",
+        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "format": "text/html"
+    }
+  ],
+  "logo": [
+    {"id": "https://projektemacher.org/images/logo.png",
+        "type": "Image",
+        "format": "image/png",
+        "height": 1024,
+        "width": 1024}
+  ],
+  "seeAlso": [
+    {
+      "id": "https://projektemacher.org/projektemacher.json",
+      "type": "Dataset",
+      "format": "application/ld+json",
+      "profile": "https://schema.org/"
+    }
+  ]
+  }
+]
+,
+
+"homepage": [
+  {
+    "id": "https://merch.projektemacher.org/en/print/kleiderbuegel/",
+    "type": "Text",
+    "format": "text/html",
+
+    "label": {
+        "en": [
+          "Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke"
+        ],
+          "de": [
+            "Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke"
+          ]
+        }
+  }
+],"label": {
+    "en": [
+      "Die Kleiderbügel-Sammlung Christian Mahnke"
+    ],
+      "de": [
+        "Die Kleiderbügel-Sammlung Christian Mahnke"
+      ]
+    }
+,"items": [{
+          "id":"https://merch.projektemacher.org/print/kleiderbuegel/canvas/front",
+          "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 2480,
+            "width": 2480,
+            "thumbnail": [{
+                "id": "https://merch.projektemacher.org/print/kleiderbuegel/front/full/full/0/default_hu_b245f9116eb3ff59.jpg",
+                "format": "image/jpeg",
+                "type":"Image",
+                "height": 300,
+                "width": 300
+              }
+            ],"items": [{
+            "id": "https://merch.projektemacher.org/print/kleiderbuegel/annotation/front",
+            "type": "AnnotationPage",
+            "items":[{
+              "id": "https://merch.projektemacher.org/print/kleiderbuegel/annotation/front/image",
+              "type": "Annotation",
+              "motivation":"painting",
+              "body":{"id": "https://merch.projektemacher.org/print/kleiderbuegel/front/full/full/0/default.jpg",
+                  "type": "Image",
+                  "format": "image/jpeg",
+                  "height": 2480,
+                  "width": 2480,
+                  "service": [{
+                    "id":"https://merch.projektemacher.org/print/kleiderbuegel/front",
+                    "type": "ImageService2",
+                    "profile":"level0"
+                  }]},
+              "target":"https://merch.projektemacher.org/print/kleiderbuegel/canvas/front"
+            }]
+          }]
+       }]
+}
