@@ -138,6 +138,7 @@ nav {
 
     .product-preview {
         min-width: fit-content;
+        max-width: 40%;
         display: flex;
         img {
           margin: 0 3em;
@@ -641,6 +642,29 @@ footer {
     }
 
   }
+}
 
+.print {
+  .preview-link img {
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
 
+  .content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .content-text {
+      max-width: 55%;
+    }
+
+    .product-preview img {
+      margin: unset;
+    }
+  }
+}
+
+.pdf-preview {
+  border: 1px solid black;
+  /*margin-top: 3rem;*/
+  flex-basis: 100%;
 }

@@ -59,6 +59,31 @@
       {{ end }}
     {{ end }}
 
+    {{/*
+      {{- define "_partials/shortcodes/pdf-preview-metadata.html" -}}
+        {{- (dict "css" slice "js" (slice "js/pdf-preview.js") "scss" (slice "scss/pdf-preview.scss")) | jsonify -}}
+      {{- end -}}
+    */}}
+
+    {{- if and .Params.pdf (ne .Params.pdf "") -}}
+      {{- $styles := resources.Get "scss/pdf-preview.scss" | toCSS | minify | fingerprint -}}
+      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
+      {{- $opts := dict
+        "minify" (not hugo.IsDevelopment)
+        "sourceMap" (cond hugo.IsDevelopment "external" "")
+        "targetPath" "js/main.js"
+      -}}
+      {{- with (resources.Get "js/pdf-preview.js") | js.Build $opts -}}
+        {{- if hugo.IsDevelopment -}}
+          <script src="{{ .RelPermalink }}"></script>
+        {{- else -}}
+          {{- with . | fingerprint -}}
+            <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32.png" | absURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16.png" | absURL }}" sizes="16x16">
     {{ if .Site.Params.favicon_svg }}
@@ -69,13 +94,14 @@
     {{ end -}}
   </head>
 
-  {{- $csClass := "colorscheme-light" -}}
+  {{- $cssClass := "colorscheme-light" -}}
   {{- if eq .Site.Params.colorscheme "dark" -}}
-    {{- $csClass = "colorscheme-dark" -}}
+    {{- $cssClass = "colorscheme-dark" -}}
   {{- else if eq .Site.Params.colorscheme "auto" -}}
-    {{- $csClass = "colorscheme-auto" -}}
+    {{- $cssClass = "colorscheme-auto" -}}
   {{- end }}
-  <body class="{{ $csClass }} {{ if .IsHome }} home {{ end }}">
+  {{- $cssClass = printf "%s %s" $cssClass .Section -}}
+  <body class="{{ $cssClass }} {{ if .IsHome }} home {{ end }}">
     <main class="wrapper">
       {{- partial "header.html" . -}}
       {{ block "content" . }}{{ end }}

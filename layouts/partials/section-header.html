@@ -1,10 +1,11 @@
+{{- $page := . -}}
 <ul class="categories">
   {{- range .Site.Sections -}}
     {{- if and (eq .Params.displayinlist false) (eq .Params.metaPage true) -}}
       {{- continue -}}
     {{- end -}}
-    {{- if eq . .CurrentSection -}}
-      <li class="merch-category active">
+    {{- if or (eq . $page.CurrentSection) (and (eq .Weight 1) (eq $page.Section "" )) -}}
+      <li class="merch-category active {{ replace .Path "/" "" | lower }}">
     {{- else -}}
       <li class="merch-category">
     {{- end -}}
