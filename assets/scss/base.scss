@@ -653,12 +653,29 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
 
+    /*
+    @media (max-width: 37.5em) {
+      flex-direction: column-reverse;
+    }
+    */
+
     .content-text {
       max-width: 55%;
+
+      @media (max-width: 37.5em) {
+        max-width: unset;
+        order: unset;
+      }
     }
 
-    .product-preview img {
-      margin: unset;
+    .product-preview {
+      @media (max-width: 37.5em) {
+        order: unset;
+      }
+
+      img {
+        margin: unset;
+      }
     }
   }
 }
