@@ -1,16 +1,25 @@
 {"@context": "http://iiif.io/api/presentation/3/context.json",
 "type": "Manifest",
 "id": "https://merch.projektemacher.org/en/print/kleiderbuegel/",
-"viewingDirection": "left-to-right","behavior":["paged"],
-"summary": {
-    "en": [
-      "The first book"
-    ],
-      "de": [
-        "Das erste Buch"
-      ]
-    }
-,"requiredStatement": {
+"viewingDirection": "left-to-right","behavior":["paged"],"summary":{"de":["Das erste Buch"],"en":["The first book"]},
+
+
+  
+  
+  
+  
+      
+  
+  
+
+  
+  
+  
+  
+      
+  
+  
+"requiredStatement": {
   "label": { "en": [ "Attribution" ],
     "de": [ "Namensnennung" ]
   },
@@ -37,23 +46,19 @@
   {
     "id": "https://projektemacher.org/",
     "type": "Agent",
-    "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
-    "homepage": [
+    "label": {"de":["Projektemacher"],"en":["Projektemacher"]},"homepage": [
       {
         "id": "https://projektemacher.org/",
         "type": "Text",
-        "label": { "en": [ "Projektemacher" ], "de": [ "Projektemacher" ] },
+        "label": {"de":["Projektemacher"],"en":["Projektemacher"]},
         "format": "text/html"
-    }
-  ],
-  "logo": [
-    {"id": "https://projektemacher.org/images/logo.png",
+    }],
+  "logo": [{"id": "https://projektemacher.org/images/logo.png",
         "type": "Image",
         "format": "image/png",
         "height": 1024,
         "width": 1024}
-  ],
-  "seeAlso": [
+  ],"seeAlso": [
     {
       "id": "https://projektemacher.org/projektemacher.json",
       "type": "Dataset",
@@ -63,32 +68,7 @@
   ]
   }
 ]
-,
-
-"homepage": [
-  {
-    "id": "https://merch.projektemacher.org/en/print/kleiderbuegel/",
-    "type": "Text",
-    "format": "text/html",
-
-    "label": {
-        "en": [
-          "Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke"
-        ],
-          "de": [
-            "Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke"
-          ]
-        }
-  }
-],"label": {
-    "en": [
-      "Die Kleiderbügel-Sammlung Christian Mahnke"
-    ],
-      "de": [
-        "Die Kleiderbügel-Sammlung Christian Mahnke"
-      ]
-    }
-,"items": [{
+,"homepage": [{"format":"text/html","id":"https://merch.projektemacher.org/en/print/kleiderbuegel/","label":{"de":["Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke"],"en":["Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke"]},"type":"Text"}],"label": {"de":["Die Kleiderbügel-Sammlung Christian Mahnke"],"en":["Die Kleiderbügel-Sammlung Christian Mahnke"]},"items": [{
           "id":"https://merch.projektemacher.org/print/kleiderbuegel/canvas/front",
           "type": "Canvas","label": {"de":["Vorderansicht"],"en":["Front"]},"height": 2480,
             "width": 2480,
