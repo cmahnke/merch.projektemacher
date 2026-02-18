@@ -6,6 +6,9 @@
         format =  "svg"
         image = "web.png"
         source = "file"
+
+        debug = true
+
         [params.preview.size]
             height = 630
             width = 1200
@@ -15,3 +18,8 @@
 
         [params.footer]
             privacy = true
+
+[params.author]
+    email = 'mail@christianmahnke.de'
+    name = 'Christian Mahnke'
+    uri = 'http://www.wikidata.org/entity/Q137668638'
