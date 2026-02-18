@@ -5,12 +5,14 @@
     <link>https://merch.projektemacher.org/en/collection.json</link>
     <description>Recent content in Merch on Projektemacher Merch</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://merch.projektemacher.org/en/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster><atom:link href="https://merch.projektemacher.org/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Die Kleiderbügel-Sammlung Christian Mahnke</title>
       <link>https://merch.projektemacher.org/en/print/kleiderbuegel/</link>
       <pubDate>Thu, 01 Jan 2026 20:45:46 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/print/kleiderbuegel/</guid>
       <description>&lt;p&gt;The first book about one of my collections is now available: the catalogue of my &lt;a href=&#34;https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/en/&#34; target=&#34;_blank&#34;&gt;clothes hanger collection&lt;/a&gt;!&lt;/p&gt;</description>
       </item>
@@ -19,7 +21,7 @@
       <title>Der flammende Baum</title>
       <link>https://merch.projektemacher.org/en/clothing/der-flammende-baum/</link>
       <pubDate>Mon, 01 Dec 2025 05:00:00 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/der-flammende-baum/</guid>
       <description>&lt;p&gt;The motif on the book originally had no reference to Christmas, but here it is on the project maker Christmas hoodie 2025.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/Frida_Schanz&#34; target=&#34;_blank&#34;&gt;Frida Schanz&lt;/a&gt; (1859-1944), was a very active author of children&amp;rsquo;s and young adult books at the end of the 19th and beginning of the 20th century. The illustration is by &lt;a href=&#34;https://de.wikipedia.org/wiki/Hugo_Steiner-Prag&#34; target=&#34;_blank&#34;&gt;Hugo Steiner-Prag&lt;/a&gt;, who also illustrated The Golem, for example.&lt;/p&gt;</description>
@@ -29,7 +31,7 @@
       <title>Sherlock Holmes hat ausgedient</title>
       <link>https://merch.projektemacher.org/en/clothing/sherlock-holmes/</link>
       <pubDate>Sat, 31 Dec 2022 19:00:00 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/sherlock-holmes/</guid>
       <description>&lt;p&gt;The book &amp;ldquo;Shelock Homes hat ausgedient&amp;rdquo; by Klaus Polkehn, published by Kinderbuchverlag Berlin in 1961 is an interesting example of advertising for the profession of &lt;a href=&#34;https://en.wikipedia.org/wiki/Volkspolizei&#34; target=&#34;_blank&#34;&gt;(people&amp;rsquo;s) policeman&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;worldcat&#34; href=&#34;https://worldcat.org/de/title/73641149&#34;&gt; &lt;/a&gt;&lt;/p&gt;</description>
@@ -39,7 +41,7 @@
       <title>Wilma Bräuner</title>
       <link>https://merch.projektemacher.org/en/clothing/wilma-braeuner/</link>
       <pubDate>Mon, 05 Dec 2022 18:00:00 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/wilma-braeuner/</guid>
       <description>&lt;p&gt;The shirt to the &lt;a href=&#34;https://xn--wilmabruner-r8a.de/&#34; target=&#34;_blank&#34;&gt;exhibition&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;Wilma Bräuner&amp;rsquo;s signature, as on her calendars.&lt;/p&gt;</description>
@@ -49,7 +51,7 @@
       <title>Ric - an unknown artist</title>
       <link>https://merch.projektemacher.org/en/clothing/ric-unknownartist/</link>
       <pubDate>Mon, 28 Nov 2022 05:47:12 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/ric-unknownartist/</guid>
       <description>&lt;p&gt;The shirt to the &lt;a href=&#34;https://ric-unknownartist.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;blog&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;Just Ric&amp;rsquo;s &lt;a href=&#34;https://ric-unknownartist.projektemacher.org/ric/&#34; target=&#34;_blank&#34;&gt;signature&lt;/a&gt;.&lt;/p&gt;</description>
@@ -59,7 +61,7 @@
       <title>Der praktische Hynotiseuer</title>
       <link>https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/</link>
       <pubDate>Tue, 19 Jul 2022 15:00:00 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/der-praktische-hypnotiseur/</guid>
       <description>&lt;p&gt;The book &amp;ldquo;Der praktische Hypnotiseur Anleitung zum Hypnotisieren sowie zur Erteilung von Suggestionen zu Heil- u. Erziehungszwecken&amp;rdquo; by Reinhold Gerling was a bestseller, as can be seen from the number of copies. No wonder with such a popular topic.&lt;/p&gt;</description>
       </item>
@@ -68,7 +70,7 @@
       <title>All seeing WiFi</title>
       <link>https://merch.projektemacher.org/en/clothing/all-seeing-wifi/</link>
       <pubDate>Tue, 31 May 2022 15:00:00 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/all-seeing-wifi/</guid>
       <description>&lt;p&gt;A warning sign that combines the WiFi symbol and the &lt;a href=&#34;https://en.wikipedia.org/wiki/Eye_of_Providence&#34; target=&#34;_blank&#34;&gt;all-seeing eye&lt;/a&gt;. In the unlikely event that the hotspots are tracking you&amp;hellip;.&lt;/p&gt;</description>
       </item>
@@ -77,7 +79,7 @@
       <title>Wir wollen nur eure Seele</title>
       <link>https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/</link>
       <pubDate>Sun, 25 Jul 2021 20:45:46 +0200</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/</guid>
       <description>&lt;p&gt;This book by Ulrich Bäumer warns against the dangers of &amp;ldquo;occult&amp;rdquo; rock music. All in all it is an amusing &lt;a href=&#34;https://en.wikipedia.org/wiki/Evangelicalism&#34; target=&#34;_blank&#34;&gt;evangelical&lt;/a&gt; work of art in parts.&lt;/p&gt;
 &lt;p&gt;Much of what you can read there seems familiar as an urban legend if you already lived in the 80s or early 90s. One of the few testimonies of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Satanic_panic&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Satanic Panic&amp;rdquo;&lt;/a&gt; that made it to Germany in book form.&lt;/p&gt;</description>
@@ -87,7 +89,7 @@
       <title>Privacy policy</title>
       <link>https://merch.projektemacher.org/en/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/privacy/</guid>
       <description>&lt;h2 id=&#34;hosting&#34;&gt;
   Hosting
@@ -114,7 +116,7 @@
       <title>Tags</title>
       <link>https://merch.projektemacher.org/en/meta/tags/index.json</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/en/meta/tags/index.json</guid>
       <description></description>
       </item>

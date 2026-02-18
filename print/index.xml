@@ -6,11 +6,13 @@
     <description>Recent content in Gedrucktes on Projektemacher Merch</description>
     <generator>Hugo</generator>
     <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
     <atom:link href="https://merch.projektemacher.org/print/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Die Kleiderbügel-Sammlung Christian Mahnke</title>
       <link>https://merch.projektemacher.org/print/kleiderbuegel/</link>
-      <pubDate>Thu, 01 Jan 2026 20:45:46 +0200</pubDate>
+      <pubDate>Thu, 01 Jan 2026 20:45:46 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
       <guid>https://merch.projektemacher.org/print/kleiderbuegel/</guid>
       <description>&lt;p&gt;Das erste Buch zu einer meiner Sammlungen ist verfügbar: Der Katalog meiner &lt;a href=&#34;https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/&#34; target=&#34;_blank&#34;&gt;Kleiderbügel-Sammlung&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
