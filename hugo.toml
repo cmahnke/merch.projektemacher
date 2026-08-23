@@ -1,5 +1,5 @@
 baseURL = "https://merch.projektemacher.org/"
-languageCode = "de"
+locale = "de"
 title = "Projektemacher Merch"
 theme = ["hugo-coder", "projektemacher-base"]
 publishDir = "docs"
@@ -25,7 +25,7 @@ enableGitInfo = true
 
 [languages]
     [languages.de]
-        languagename = "Deutsch"
+        label = "Deutsch"
 
         [languages.de.params]
             tagLines = ["Blog Potpourri", "Blogfabrik"]
@@ -68,7 +68,7 @@ enableGitInfo = true
                 url = "https://projektemacher.org/contact/"
 
     [languages.en]
-        languagename = "English"
+        label = "English"
 
         [languages.en.params]
             info = "Blog factory"
