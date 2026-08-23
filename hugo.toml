@@ -5,7 +5,6 @@ theme = ["hugo-coder", "projektemacher-base"]
 publishDir = "docs"
 canonifyurls = true
 disableKinds = ["term", "taxonomy"]
-languagecode = "de"
 defaultcontentlanguage = "de"
 summaryLength = 30
 enableGitInfo = true
