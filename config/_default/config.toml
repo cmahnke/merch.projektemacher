@@ -1,5 +1,7 @@
 [params]
   disableScale = true
+  schemaPerson = "https://christianmahnke.de/person.jsonld"
+
     [params.preview]
         outputPrefix = "ogPreview-overlay"
         outputSuffix = ".png"
