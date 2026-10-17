@@ -26,6 +26,7 @@ $nav-color: #293133 !default;
 @import "base";
 @import "content";
 @import "navigation";
+$font-color-body: $fg-color;
 @import "menu";
 @import "ol";
 @import "ol-iiif";
