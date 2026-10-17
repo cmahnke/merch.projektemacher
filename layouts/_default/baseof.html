@@ -63,7 +63,7 @@
 
     {{/*
       {{- define "_partials/shortcodes/pdf-preview-metadata.html" -}}
-        {{- (dict "css" slice "js" (slice "js/pdf-preview.js") "scss" (slice "scss/pdf-preview.scss")) | jsonify -}}
+        {{- (dict "css" slice "js" (slice "ts/pdf-preview.ts") "scss" (slice "scss/pdf-preview.scss")) | jsonify -}}
       {{- end -}}
     */}}
 
@@ -75,7 +75,7 @@
         "sourceMap" (cond hugo.IsDevelopment "external" "")
         "targetPath" "js/main.js"
       -}}
-      {{- with (resources.Get "js/pdf-preview.js") | js.Build $opts -}}
+      {{- with (resources.Get "ts/pdf-preview.ts") | js.Build $opts -}}
         {{- if hugo.IsDevelopment -}}
           <script src="{{ .RelPermalink }}"></script>
         {{- else -}}
