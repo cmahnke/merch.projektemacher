@@ -1,5 +1,4 @@
 [params]
-  disableScale = true
   schemaPerson = "https://christianmahnke.de/person.jsonld"
 
   [params.css]

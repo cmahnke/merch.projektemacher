@@ -3,9 +3,9 @@
 {{- $contextPath := $page.File.Path -}}
 {{- $context := .context -}}
 <div class="product-preview">
-    {{- $previewImg := ($page.Resources.GetMatch "product") -}}
-    {{- $imgLocation := path.Join $contextPath ($page.Resources.GetMatch "product") -}}
-    {{- if not (hasPrefix $contextPath "privacy") -}}
+    {{- $previewImg := $page.Resources.GetMatch "product" -}}
+    {{- $imgLocation := path.Join $contextPath "product" -}}
+    {{- if and (not (hasPrefix $contextPath "privacy")) (not $page.Params.metaPage) -}}
       {{- if eq $previewImg nil -}}
           {{- errorf "Can't find image %s: %#v" $imgLocation $previewImg -}}
       {{- else -}}

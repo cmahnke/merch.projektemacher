@@ -19,7 +19,7 @@
     {{- partial "html/head/coder.html" . -}}
 
     {{- if and .Params.pdf (ne .Params.pdf "") -}}
-      {{- $styles := resources.Get "scss/pdf-preview.scss" | toCSS | minify | fingerprint -}}
+      {{- $styles := resources.Get "scss/pdf-preview.scss" | toCSS (dict "transpiler" "dartsass") | minify | fingerprint -}}
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
       {{- $opts := dict
         "minify" (not hugo.IsDevelopment)
