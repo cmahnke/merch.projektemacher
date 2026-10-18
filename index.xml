@@ -149,6 +149,23 @@
       </item>
     
     <item>
+      <title>Über</title>
+      <link>https://merch.projektemacher.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://merch.projektemacher.org/about/</guid>
+      <description>&lt;p&gt;Alle Entwürfe und Produkte dieser Seite sind Projekte von &lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Projektemacher&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bei Interesse schreib einfach eine Mail an &lt;a href=&#34;mailto:merch@projektemacher.org&#34;&gt;merch@projektemacher.org&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;datenschutzerklärung&#34;&gt;
+  Datenschutzerklärung
+  &lt;a class=&#34;heading-link&#34; href=&#34;#datenschutzerkl%c3%a4rung&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Die Datenschutzerklärung ist &lt;a href=&#34;https://merch.projektemacher.org/privacy&#34;&gt;hier&lt;/a&gt; verfügbar.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
       <title>Wikidata</title>
       <link>https://merch.projektemacher.org/meta/wikidata/index.json</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

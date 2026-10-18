@@ -142,8 +142,22 @@
                 href="https://merch.projektemacher.org/en/clothing/wir-wollen-nur-eure-seele/"
                 />
   </url><url>
+    <loc>https://merch.projektemacher.org/en/about/</loc>
+    <lastmod>2026-10-19T00:25:36+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://merch.projektemacher.org/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://merch.projektemacher.org/en/about/"
+                />
+  </url><url>
     <loc>https://merch.projektemacher.org/en/</loc>
-    <lastmod>2025-02-18T11:41:31+01:00</lastmod>
+    <lastmod>2026-10-19T00:25:36+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <xhtml:link
                 rel="alternate"

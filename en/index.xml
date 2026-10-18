@@ -86,6 +86,23 @@
       </item>
     
     <item>
+      <title>About</title>
+      <link>https://merch.projektemacher.org/en/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://merch.projektemacher.org/en/about/</guid>
+      <description>&lt;p&gt;All designs and products on this site are projects by &lt;a href=&#34;https://projektemacher.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Projektemacher&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are interested just write a mail to &lt;a href=&#34;mailto:merch@projektemacher.org&#34;&gt;merch@projektemacher.org&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;privacy-policy&#34;&gt;
+  Privacy policy
+  &lt;a class=&#34;heading-link&#34; href=&#34;#privacy-policy&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The privacy policy is available &lt;a href=&#34;https://merch.projektemacher.org/privacy&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      </item>
+    
+    <item>
       <title>Linked Art</title>
       <link>https://merch.projektemacher.org/en/meta/linked-art/index.json</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
