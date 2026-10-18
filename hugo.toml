@@ -172,7 +172,9 @@ defaultMarkdownHandler = 'goldmark'
 [sitemap]
   changeFreq = 'weekly'
 
-[imaging]
+[imaging.jpeg]
+    quality = 95
+[imaging.webp]
     quality = 95
 
 [build]
