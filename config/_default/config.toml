@@ -2,6 +2,9 @@
   disableScale = true
   schemaPerson = "https://christianmahnke.de/person.jsonld"
 
+  [params.css]
+    includeDirs = ["node_modules/bootstrap/scss"]
+
     [params.preview]
         outputPrefix = "ogPreview-overlay"
         outputSuffix = ".png"

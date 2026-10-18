@@ -1,6 +1,6 @@
 {{- $page := . -}}
 <ul class="categories">
-  {{- range .Site.Sections -}}
+  {{- range site.Sections -}}
     {{- if and (eq .Params.displayinlist false) (eq .Params.metaPage true) -}}
       {{- continue -}}
     {{- end -}}

@@ -2,13 +2,13 @@
   <section class="container">
     <a class="navigation-title" href="https://projektemacher.org/">
       {{- if .IsHome -}}
-        {{ .Site.Title }}
+        {{ site.Title }}
       {{- else -}}
         <img alt="Logo" class="header-logo" src="/images/laborant.svg" />
-        {{ .Site.Title }}
+        {{ site.Title }}
       {{- end -}}
     </a>
-    {{ if or .Site.Menus.main hugo.IsMultilingual }}
+    {{ if or site.Menus.main hugo.IsMultilingual }}
       {{- partial "menu.html" . -}}
     {{ end }}
   </section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ site.Language.Lang }}">
 
   <head>
     <meta charset="utf-8">
@@ -12,14 +12,14 @@
 
     {{- template "_internal/opengraph.html" . -}}
 
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
 
     {{- if .Permalink -}}
       <link rel="canonical" href="{{ .Permalink }}">
     {{- end -}}
 
     {{ partial "html/head/meta.html" . }}
-    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" )) -}}
+    {{- partial "html/head/style.html" (dict "context" .) -}}
     {{- partial "html/head/script.html" . -}}
 
     {{/*
@@ -28,8 +28,8 @@
     {{- end -}}
     */}}
 
-    {{- if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") -}}
-      {{- if .Site.IsServer -}}
+    {{- if  or (eq site.Params.colorscheme "auto") (eq site.Params.colorscheme "dark") -}}
+      {{- if hugo.IsServer -}}
         {{- $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) -}}
         {{- $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
@@ -41,17 +41,17 @@
     {{ end }}
 
     {{/* External Styles - Fonts etc */}}
-    {{ range .Site.Params.stylesheets -}}
+    {{ range site.Params.stylesheets -}}
     <link href="{{ . }}" rel="stylesheet">
     {{- end -}}
 
-    {{ range .Site.Params.custom_css }}
+    {{ range site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}
 
-    {{ range .Site.Params.custom_scss }}
+    {{ range site.Params.custom_scss }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
-      {{ if $.Site.IsServer }}
+      {{ if $hugo.IsServer }}
         {{- $cssOpts := (dict "enableSourceMap" true ) -}}
         {{- $styles := resources.Get . | toCSS $cssOpts -}}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
@@ -61,19 +61,13 @@
       {{ end }}
     {{ end }}
 
-    {{/*
-      {{- define "_partials/shortcodes/pdf-preview-metadata.html" -}}
-        {{- (dict "css" slice "js" (slice "ts/pdf-preview.ts") "scss" (slice "scss/pdf-preview.scss")) | jsonify -}}
-      {{- end -}}
-    */}}
-
     {{- if and .Params.pdf (ne .Params.pdf "") -}}
       {{- $styles := resources.Get "scss/pdf-preview.scss" | toCSS | minify | fingerprint -}}
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
       {{- $opts := dict
         "minify" (not hugo.IsDevelopment)
         "sourceMap" (cond hugo.IsDevelopment "external" "")
-        "targetPath" "js/main.js"
+        "targetPath" "js/pdf-preview.js"
       -}}
       {{- with (resources.Get "ts/pdf-preview.ts") | js.Build $opts -}}
         {{- if hugo.IsDevelopment -}}
@@ -86,21 +80,21 @@
       {{- end -}}
     {{- end -}}
 
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32.png" | absURL }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16.png" | absURL }}" sizes="16x16">
-    {{ if .Site.Params.favicon_svg }}
-        <link rel="icon" type="image/svg+xml" href="{{ .Site.Params.favicon_svg }}">
+    <link rel="icon" type="image/png" href="{{ site.Params.favicon_32 | default "/images/favicon-32.png" | absURL }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.Params.favicon_16 | default "/images/favicon-16.png" | absURL }}" sizes="16x16">
+    {{ if site.Params.favicon_svg }}
+        <link rel="icon" type="image/svg+xml" href="{{ site.Params.favicon_svg }}">
     {{ end }}
     {{ range .AlternativeOutputFormats -}}
-      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
     {{ end -}}
     {{- partial "metadata/schema.org/schema.org.html" . -}}
   </head>
 
   {{- $cssClass := "colorscheme-light" -}}
-  {{- if eq .Site.Params.colorscheme "dark" -}}
+  {{- if eq site.Params.colorscheme "dark" -}}
     {{- $cssClass = "colorscheme-dark" -}}
-  {{- else if eq .Site.Params.colorscheme "auto" -}}
+  {{- else if eq site.Params.colorscheme "auto" -}}
     {{- $cssClass = "colorscheme-auto" -}}
   {{- end }}
   {{- $cssClass = printf "%s %s" $cssClass .Section -}}
