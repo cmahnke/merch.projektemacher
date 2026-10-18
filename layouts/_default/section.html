@@ -1,5 +1,5 @@
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
+  {{- partial "title.html" . -}}
 {{ end }}
 {{ define "content" }}
   {{- if ne .CurrentSection .FirstSection -}}

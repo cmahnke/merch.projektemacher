@@ -41,26 +41,11 @@
 
           {{ range $pages }}
             <li class="post-preview">
-              <div class="post-heading">
-                <span class="date">
-                  {{- .Date | time.Format ":date_full" -}}
-                </span>
-                <span class="link">
-                  <a class="title" href="{{ .RelPermalink }}">{{ .Title -}}</a>
-                </span>
-              </div>
-              <div class="post-snippet">
-                {{ if ne .Summary ""}}
-                  <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Summary -}}
-                {{ else }}
-                  <span class="description"><a class="preview-link" href="{{ .RelPermalink}}">{{- .Description | markdownify -}}..
-                {{ end }}
-                </a><br /><a href="{{ .RelPermalink }}">{{ i18n "readmore" }}</a></span>
-                {{- $page := .Page -}}
-                {{ if and (ne .Kind "section") (not .IsHome) }}
-                  {{ partial "product-preview.html" (dict "context" . "pageContext" $page "width" 150) }}
-                {{ end }}
-              </div>
+              {{- $slot := "" -}}
+              {{- if and (ne .Kind "section") (not .IsHome) -}}
+                {{- $slot = partial "product-preview.html" (dict "context" . "pageContext" .Page "width" 150) -}}
+              {{- end -}}
+              {{- partial "posts/li.html" (dict "page" . "summary" true "readmore" true "linkDescription" true "slot" $slot) -}}
             </li>
           {{ end }}
         </ul>
