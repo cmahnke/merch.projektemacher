@@ -48,7 +48,8 @@
   {{- end }}
   {{- $cssClass = printf "%s %s" $cssClass .Section -}}
   <body class="{{ $cssClass }} {{ if .IsHome }} home {{ end }}">
-    <main class="wrapper">
+    <a class="skip-link" href="#main">{{ i18n "skipToContent" }}</a>
+    <main class="wrapper" id="main">
       {{- partial "header.html" . -}}
       {{ block "content" . }}{{ end }}
     </main>

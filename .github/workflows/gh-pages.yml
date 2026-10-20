@@ -71,7 +71,7 @@ jobs:
 
       - name: Puppeteer
         run: |
-          ./themes/projektemacher-base/scripts/github/check-js-errors.sh
+          ./themes/projektemacher-base/scripts/github/check-js-errors.sh -i
 
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v4
