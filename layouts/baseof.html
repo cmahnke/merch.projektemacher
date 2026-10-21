@@ -15,7 +15,7 @@
     {{ partial "html/head/meta.html" . }}
     {{- partial "html/head/links.html" . -}}
     {{- partial "html/head/style.html" (dict "context" .) -}}
-    {{- partial "html/head/script.html" . -}}
+    {{- partial "html/head/script.html" (dict "context" . "opts" (dict "format" "esm")) -}}
     {{- partial "html/head/coder.html" . -}}
 
     {{- if and .Params.pdf (ne .Params.pdf "") -}}
@@ -25,13 +25,14 @@
         "minify" (not hugo.IsDevelopment)
         "sourceMap" (cond hugo.IsDevelopment "external" "")
         "targetPath" "js/pdf-preview.js"
+        "format" "esm"
       -}}
       {{- with (resources.Get "ts/pdf-preview.ts") | js.Build $opts -}}
         {{- if hugo.IsDevelopment -}}
-          <script src="{{ .RelPermalink }}"></script>
+          <script type="module" src="{{ .RelPermalink }}"></script>
         {{- else -}}
           {{- with . | fingerprint -}}
-            <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
+            <script type="module" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous"></script>
           {{- end -}}
         {{- end -}}
       {{- end -}}

@@ -37,8 +37,7 @@
     "vis-timeline": "8.5.4",
     "yargs": "^18.2.0",
     "bootstrap": "^5.3.8",
-    "@popperjs/core": "^2.11.8",
-    "jquery": "^4.0.0"
+    "@popperjs/core": "^2.11.8"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
