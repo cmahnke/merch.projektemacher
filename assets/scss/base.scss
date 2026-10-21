@@ -1,48 +1,35 @@
 @use "functions/color" as *;
 /* @use "hugo:vars" as *; */
 
-/*
- * Partial @use migration: @use rules must precede @import, so module
- * based partials emit their CSS in the order given here — normalize
- * and bootstrap keep their position at the head of the cascade; the
- * remaining modules are class-scoped and order independent (ol-iiif
- * ships the ol CSS itself, so the separate "ol" import is gone). Not
- * yet migratable: the hugo-coder partials (global-leak variables),
- * menu (configured via injected globals) and coder/site-shared
- * (deliberate leak module).
- */
-@use "normalize";
-@use "bootstrap";
-/* Base fonts — loaded exactly once here (not via site-shared, which
-   may be evaluated twice: module + @import) */
-@use "npm-fonts/lato";
-@use "npm-fonts/lora";
-@use "ol-iiif";
-@use "media-info";
-
-/* Shared skin foundation from the base theme: variables, fonts, burger icon */
-@import "coder/site-shared";
-
-/* Colors dark */
+/* Colors dark (kept from the legacy entry; unused by this skin) */
 $bg-color-dark: #212121 !default;
 $fg-color-dark: #dadada !default;
 $alt-bg-color-dark: #424242 !default;
 $alt-fg-color-dark: #dadada !default;
 $link-color-dark: #42a5f5 !default;
 
-@import "base";
-@import "content";
-@import "navigation";
-$font-color-body: $fg-color;
-@import "menu";
-@import "icons";
-
 /*
- * Shared site chrome from the base theme: icon replacements, fixed
- * navigation, home/404 background, about/404 containers, list card
- * styles, flags, body watermark, footer, skip link.
+ * Fully module-based entry (no @import). The @use order reproduces
+ * the original cascade: normalize/bootstrap first, the coder chrome
+ * (vendored, equivalent to hugo-coder's copies), then the theme's
+ * partials, the shared site chrome last — followed by the merch
+ * specific rules below. Variables for site rules come from the
+ * "shared" namespace; menu is configured via with().
  */
-@import "coder/site-chrome";
+@use "coder/site-shared" as shared;
+@use "normalize";
+@use "bootstrap";
+/* Base fonts — loaded exactly once here */
+@use "npm-fonts/lato";
+@use "npm-fonts/lora";
+@use "coder/base";
+@use "coder/content";
+@use "coder/navigation";
+@use "menu" with ($font-color-body: shared.$fg-color);
+@use "ol-iiif";
+@use "icons";
+@use "media-info";
+@use "coder/site-chrome";
 
 /*
  * Merch specific styles on top of the shared site chrome.
@@ -150,7 +137,7 @@ article {
     width: 1.6em;
     height: 1.6em;
     line-height: 2em;
-    content: url($insta-dark);
+    content: url(icons.$insta-dark);
     vertical-align: sub;
 }
 
@@ -161,11 +148,11 @@ article {
     display: flex;
     align-items: center;
     align-self: center;
-    font-family: $heading-font-family;
+    font-family: shared.$heading-font-family;
     justify-content: center;
     padding: 0px !important;
     box-sizing: border-box;
-    border-bottom: $nav-color 2px solid;
+    border-bottom: shared.$nav-color 2px solid;
 
     li {
         padding-inline-start: 0px;
@@ -183,12 +170,12 @@ article {
 
         a {
           text-decoration: none;
-          color: $alt-fg-color;
+          color: shared.$alt-fg-color;
           font-size: 18px;
         }
 
         &.active {
-          border-bottom: $nav-color 2px solid;
+          border-bottom: shared.$nav-color 2px solid;
         }
     }
 }
@@ -233,7 +220,7 @@ article {
         bottom: -5em;
         right: 0;
         a, a:link, a:visited, a:hover {
-            color: $fg-color;
+            color: shared.$fg-color;
             text-decoration: none;
         }
     }
@@ -246,7 +233,7 @@ article {
     &:visited,
     &:hover,
     &:active {
-      color: $fg-color;
+      color: shared.$fg-color;
       text-decoration: none;
     }
 
