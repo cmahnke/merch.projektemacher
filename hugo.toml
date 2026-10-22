@@ -9,6 +9,8 @@ defaultContentLanguage = "de"
 summaryLength = 30
 enableGitInfo = true
 
+enableRobotsTXT = true
+
 [module]
     [[module.mounts]]
         source = "assets/scss"
@@ -183,3 +185,6 @@ defaultMarkdownHandler = 'goldmark'
 [security]
   [security.http]
     mediaTypes = ['^application/json$', '^application/json;\s?charset=[uU][tT][fF]-8$', '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$']
+
+[params.robots]
+  llmsTXT = true
