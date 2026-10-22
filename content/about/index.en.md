@@ -1,8 +1,9 @@
 ---
 title: "About"
 slug: about
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 
 All designs and products on this site are projects by [Projektemacher](https://projektemacher.org/).

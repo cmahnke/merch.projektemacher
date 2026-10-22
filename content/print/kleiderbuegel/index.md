@@ -16,7 +16,8 @@ resources:
   name: product
   params:
     preview: true
-pdf: kleiderbügel-2025.pdf
+params:
+  pdf: kleiderbügel-2025.pdf
 ---
 
 Das erste Buch zu einer meiner Sammlungen ist verfügbar: Der Katalog meiner [Kleiderbügel-Sammlung](https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/)!

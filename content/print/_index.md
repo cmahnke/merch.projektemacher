@@ -1,7 +1,8 @@
 ---
 title: "Gedrucktes"
 description: 'Alle Druckerzeugnisse'
-displayinlist: false
+params:
+  displayinlist: false
 weight: 2
 ---
 Hier finden sich alle Druckerzeugnisse.

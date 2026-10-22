@@ -1,8 +1,9 @@
 ---
 title: "Über"
 slug: about
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 
 Alle Entwürfe und Produkte dieser Seite sind Projekte von [Projektemacher](https://projektemacher.org/).

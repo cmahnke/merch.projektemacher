@@ -16,7 +16,8 @@ resources:
   name: product
   params:
     preview: true
-pdf: kleiderbügel-2025.pdf
+params:
+  pdf: kleiderbügel-2025.pdf
 ---
 
 The first book about one of my collections is now available: the catalogue of my [clothes hanger collection](https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/en/)!

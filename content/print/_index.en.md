@@ -1,7 +1,8 @@
 ---
 title: "Printed matter"
 description: 'All printed materials'
-displayinlist: false
+params:
+  displayinlist: false
 weight: 2
 ---
 Here you can find all printed materials.
