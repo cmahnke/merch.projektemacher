@@ -1,5 +1,10 @@
 # Projektemacher Merch
 
+
+
+## Author
+
+Christian Mahnke
 - [Über](https://merch.projektemacher.org/about/): 
 - [Klamotten](https://merch.projektemacher.org/clothing/): Alle Kleidungsstücke
 - [Gedrucktes](https://merch.projektemacher.org/print/): Alle Druckerzeugnisse
