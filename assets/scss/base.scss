@@ -30,10 +30,24 @@ $link-color-dark: #42a5f5 !default;
 @use "icons";
 @use "media-info";
 @use "coder/site-chrome";
+@use "menu-overrides";
 
 /*
  * Merch specific styles on top of the shared site chrome.
  */
+
+nav .container {
+    @media only screen and (max-width: 840px) {
+        .navigation-item span {
+            margin-left: .8rem;
+            margin-right: .8rem;
+
+            .navigation-link i.link-icon {
+                display: none;
+            }
+        }
+    }
+}
 
 article {
     header h1.header {
